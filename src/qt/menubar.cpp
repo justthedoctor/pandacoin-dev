@@ -32,20 +32,8 @@ void MenuBar::clientModeChanged(ClientMode mode)
 }
 
 void MenuBar::on_ModeButton_clicked()
-    : QFrame(parent)
-    , ui(new Ui::AddressBookPage_new)
-    , model(NULL)
-    , filterModel(NULL)
 {
-    {
-        ui->setupUi(this);
-
-        ui->address_book_edit_frame->setVisible(false);
-
-        #ifndef USE_QRCODE
-        ui->showQRCode->setVisible(false);
-        #endif
-    }
+ ui->tabWidget->setCurrentIndex(1);
 }
 
 void MenuBar::on_FileButton_clicked()
