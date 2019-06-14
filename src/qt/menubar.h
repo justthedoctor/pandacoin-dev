@@ -23,6 +23,7 @@ signals:
     void showFileMenu(QPoint);
     void showSettingsMenu(QPoint);
     void showHelpMenu(QPoint);
+	void showAddressBook(QPoint);
 
 public slots:
     void clientModeChanged(ClientMode);
