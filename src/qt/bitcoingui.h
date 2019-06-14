@@ -83,7 +83,6 @@ private:
     QAction *signMessageAction;
     QAction *verifyMessageAction;
     QAction *aboutAction;
-    QAction *donateAction;
     QAction *receiveCoinsAction;
     QAction *optionsAction;
     QAction *toggleHideAction;
@@ -94,7 +93,6 @@ private:
     QAction *unlockWalletAction;
     QAction *lockWalletAction;
     QAction *aboutQtAction;
-    QAction *aMenuAction;
     QAction *openRPCConsoleAction;
 
     QAction *clientModeFullAction;

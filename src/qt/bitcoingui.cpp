@@ -291,12 +291,6 @@ void BitcoinGUI::createActions()
     aboutQtAction = new QAction(QIcon(":/trolltech/qmessagebox/images/qtlogo-64.png"), tr("About &Qt"), this);
     aboutQtAction->setToolTip(tr("Show information about Qt"));
     aboutQtAction->setMenuRole(QAction::AboutQtRole);
-    donateAction = new QAction(QIcon(":/trolltech/qmessagebox/images/qtlogo-64.png"), tr("Donate to PND4PND"), this);
-    donateAction->setToolTip(tr("Donate to PND4PND"));
-    donateAction->setMenuRole(QAction::AboutQtRole);
-    //aMenuAction = new QAction(QIcon(":/trolltech/qmessagebox/images/qtlogo-64.png"), tr("Address Book"), this);
-    //aMenuAction->setToolTip(tr("Open Address Book"));
-    //aMenuAction->setMenuRole(QAction::aMenuAction);
     optionsAction = new QAction(QIcon(":/icons/options"), tr("&Options..."), this);
     optionsAction->setToolTip(tr("Modify configuration options for Digital PandaBank"));
     optionsAction->setMenuRole(QAction::PreferencesRole);
@@ -339,7 +333,6 @@ void BitcoinGUI::createActions()
     connect(lockWalletAction, SIGNAL(triggered()), this, SLOT(lockWallet()));
     connect(signMessageAction, SIGNAL(triggered()), this, SLOT(gotoSignMessageTab()));
     connect(verifyMessageAction, SIGNAL(triggered()), this, SLOT(gotoVerifyMessageTab()));
-    //connect(aMenuAction, SIGNAL(triggered()), this, SLOT(showNormalIfMinimized()));
 
 
     connect(clientModeFullAction, SIGNAL(triggered()), this, SLOT(setFullClientMode()));
@@ -390,8 +383,6 @@ void BitcoinGUI::showHelpMenu(QPoint pos)
     help->addSeparator();
     help->addAction(aboutAction);
     help->addAction(aboutQtAction);
-    help->addSeparator();
-    help->addAction(donateAction);
 
     help->exec(pos,0);
 }
