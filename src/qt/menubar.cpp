@@ -1,6 +1,7 @@
 #include "ui_menubar.h"
 #include "menubar.h"
 
+
 MenuBar::MenuBar(QWidget *parent)
 : QFrame(parent)
 , ui(new Ui::MenuBar)
@@ -33,7 +34,10 @@ void MenuBar::clientModeChanged(ClientMode mode)
 
 void MenuBar::on_ModeButton_clicked()
 {
- ui->tabWidget->setCurrentIndex(1);
+    QPoint pos=ui->FileButton->mapToGlobal(QPoint(0,0));
+      pos.setY(pos.y()+ui->FileButton->height());
+      emit showAddressBook(pos);
+      ui->ModeButton->update();
 }
 
 void MenuBar::on_FileButton_clicked()

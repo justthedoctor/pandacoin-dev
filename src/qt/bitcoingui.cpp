@@ -218,6 +218,7 @@ BitcoinGUI::BitcoinGUI(QWidget *parent)
 
     //Show menus as needed
     //connect(centralWidget->getMenuBar(), SIGNAL(showModeMenu(QPoint)), this, SLOT(showModeMenu(QPoint)));
+    connect(centralWidget->getMenuBar(), SIGNAL(showAddressBook(QPoint)), this, SLOT(showAddressBook(QPoint)));
     connect(centralWidget->getMenuBar(), SIGNAL(showFileMenu(QPoint)), this, SLOT(showFileMenu(QPoint)));
     connect(centralWidget->getMenuBar(), SIGNAL(showSettingsMenu(QPoint)), this, SLOT(showSettingsMenu(QPoint)));
     connect(centralWidget->getMenuBar(), SIGNAL(showHelpMenu(QPoint)), this, SLOT(showHelpMenu(QPoint)));
@@ -387,6 +388,11 @@ void BitcoinGUI::showHelpMenu(QPoint pos)
     help->exec(pos,0);
 }
 
+void BitcoinGUI::showAddressBook(QPoint pos)
+{
+    gotoHistoryPage(); 
+	transferPage->setFocusToAddessBookPane();
+}
 
 void BitcoinGUI::setClientModel(ClientModel *clientModel)
 {
