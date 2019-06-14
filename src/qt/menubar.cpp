@@ -32,11 +32,20 @@ void MenuBar::clientModeChanged(ClientMode mode)
 }
 
 void MenuBar::on_ModeButton_clicked()
+    : QFrame(parent)
+    , ui(new Ui::AddressBookPage_new)
+    , model(NULL)
+    , filterModel(NULL)
 {
-    QPoint pos=ui->ModeButton->mapToGlobal(QPoint(0,0));
-    pos.setY(pos.y()+ui->ModeButton->height());
-    emit showModeMenu(pos);
-    ui->ModeButton->update();
+    {
+        ui->setupUi(this);
+
+        ui->address_book_edit_frame->setVisible(false);
+
+        #ifndef USE_QRCODE
+        ui->showQRCode->setVisible(false);
+        #endif
+    }
 }
 
 void MenuBar::on_FileButton_clicked()
