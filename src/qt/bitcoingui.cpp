@@ -390,7 +390,7 @@ void BitcoinGUI::showHelpMenu(QPoint pos)
 
 void BitcoinGUI::showAddressBook(QPoint pos)
 {
-    gotoHistoryPage(); 
+    gotoSendCoinsPage();
 	transferPage->setFocusToAddessBookPane();
 }
 
