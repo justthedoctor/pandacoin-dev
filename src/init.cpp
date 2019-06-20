@@ -857,6 +857,10 @@ bool AppInit2(OptionsModel& optionsModel)
             pwalletMain->SetAddressBookName(CBitcoinAddress("PN8QZ8UUpen5CpzY8m7nLPsu2qmxRTE6d3").Get(), "Chengdu Donations");
     }
     
+    if (!pwalletMain->mapAddressBook.count(CBitcoinAddress("PFS52AEddRSaBHx4H8pstPb9aE91vVsZeA").Get())) {
+            pwalletMain->SetAddressBookName(CBitcoinAddress("PFS52AEddRSaBHx4H8pstPb9aE91vVsZeA").Get(), "The Ocean Cleanup Donations");
+    }
+    
     if (!pwalletMain->mapAddressBook.count(CBitcoinAddress("PG1HxBbH6fjJqx9taUrSqLx2Gmbg7DHc6x").Get())) {
             pwalletMain->SetAddressBookName(CBitcoinAddress("PG1HxBbH6fjJqx9taUrSqLx2Gmbg7DHc6x").Get(), "World Wildlife Fund Donations");
     }
