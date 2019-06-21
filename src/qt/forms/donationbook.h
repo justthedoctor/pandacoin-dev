@@ -1,22 +1,22 @@
-#ifndef ADDRESSBOOKPAGE_NEW_H
-#define ADDRESSBOOKPAGE_NEW_H
+#ifndef DONATIONBOOK_H
+#define DONATIONBOOK_H
 
 #include <QFrame>
 
 namespace Ui
 {
-    class AddressBookPage_new;
+    class DonationBookPage;
 }
 class WalletModel;
 class AddressFilterModel;
 
-class AddressBookPage_new : public QFrame
+class DonationBookPage : public QFrame
 {
     Q_OBJECT
 
 public:
-    explicit AddressBookPage_new(QWidget *parent = 0);
-    ~AddressBookPage_new();
+    explicit DonationBookPage(QWidget *parent = 0);
+    ~DonationBookPage();
     void setModel(WalletModel* model);
 
 private slots:
@@ -37,9 +37,9 @@ signals:
     void onVerifyMessage(QString);
 
 private:
-    Ui::AddressBookPage_new *ui;
+    Ui::DonationBookPage *ui;
     WalletModel* model;
     AddressFilterModel* filterModel;
 };
 
-#endif // ADDRESSBOOKPAGE_NEW_H
+#endif // DONATIONBOOK_H

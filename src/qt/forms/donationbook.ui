@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>AddressBookPage_new</class>
- <widget class="QFrame" name="AddressBookPage_new">
+ <class>DonationBookPage</class>
+ <widget class="QFrame" name="DonationBookPage">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -45,7 +45,7 @@
         </font>
        </property>
        <property name="text">
-        <string>Address Book</string>
+        <string>Donation Book</string>
        </property>
        <property name="textFormat">
         <enum>Qt::PlainText</enum>
@@ -193,7 +193,16 @@
         <property name="spacing">
          <number>14</number>
         </property>
-        <property name="margin">
+        <property name="leftMargin">
+         <number>14</number>
+        </property>
+        <property name="topMargin">
+         <number>14</number>
+        </property>
+        <property name="rightMargin">
+         <number>14</number>
+        </property>
+        <property name="bottomMargin">
          <number>14</number>
         </property>
         <item>
@@ -556,18 +565,20 @@
               <property name="spacing">
                <number>0</number>
               </property>
-              <property name="margin">
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
                <number>0</number>
               </property>
               <item>
                <layout class="QHBoxLayout" name="horizontalLayout_7">
-                <item>
-                 <widget class="QPushButton" name="address_book_delete_button">
-                  <property name="text">
-                   <string>Delete</string>
-                  </property>
-                 </widget>
-                </item>
                 <item>
                  <spacer name="horizontalSpacer_2">
                   <property name="orientation">

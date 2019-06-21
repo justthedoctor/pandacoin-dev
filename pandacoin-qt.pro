@@ -143,6 +143,7 @@ SOURCES += src/txdb-leveldb.cpp \
     src/qt/forms/createaccountwidget.cpp \
     src/qt/forms/transferpage.cpp \
     src/qt/forms/addressbookpage_new.cpp \
+    src/qt/forms/donationbook.cpp \
     src/qt/addresstablemodel_impl.cpp \
     src/qt/forms/sendcoinstargetwidget.cpp \
     src/qt/portfoliooverviewtable.cpp \
@@ -404,6 +405,7 @@ RESOURCES += \
 FORMS += \
     src/qt/forms/coincontroldialog.ui \
     src/qt/forms/addressbookpage.ui \
+    src/qt/forms/donationbook.ui \
     src/qt/forms/signverifymessagedialog.ui \
     src/qt/forms/aboutdialog.ui \
     src/qt/forms/editaddressdialog.ui \
