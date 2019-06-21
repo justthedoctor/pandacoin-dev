@@ -90,10 +90,20 @@
        </item>
       </layout>
      </widget>
-     <widget class="QWidget" name="tab">
+     <widget class="QWidget" name="tab_3">
       <attribute name="title">
        <string>Donation Book</string>
       </attribute>
+      <widget class="DonationBookPage" name="donation_pane" native="true">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>394</width>
+         <height>274</height>
+        </rect>
+       </property>
+      </widget>
      </widget>
     </widget>
    </item>
