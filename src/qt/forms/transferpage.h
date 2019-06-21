@@ -18,7 +18,7 @@ public:
     void setModel(WalletModel *model);
     void setFocusToTransferPane();
     void setFocusToAddessBookPane();
-    void setFocusDonationBookPane();
+    void setFocusToDonationBookPane();
     bool handleURI(const QString &uri);
 
 signals:

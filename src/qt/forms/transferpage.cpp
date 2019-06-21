@@ -35,3 +35,8 @@ void TransferPage::setFocusToAddessBookPane()
 {
     ui->tabWidget->setCurrentIndex(1);
 }
+
+void TransferPage::setFocusToDonationBookPane()
+{
+    ui->tabWidget->setCurrentIndex(2);
+}
