@@ -398,7 +398,7 @@ void BitcoinGUI::showAddressBook(QPoint pos)
 
 void BitcoinGUI::showDonationBook(QPoint pos)
 {
-    gotoHistoryPage(); 
+    gotoSendCoinsPage();
 	transferPage->setFocusToDonationBookPane();
 } 
 
