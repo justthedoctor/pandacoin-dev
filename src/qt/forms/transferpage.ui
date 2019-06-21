@@ -131,7 +131,7 @@
   <customwidget>
    <class>DonationBookPage</class>
    <extends>QWidget</extends>
-   <header>donationbookpage.h</header>
+   <header>forms/donationbook.h</header>
    <container>1</container>
   </customwidget>
  </customwidgets>
