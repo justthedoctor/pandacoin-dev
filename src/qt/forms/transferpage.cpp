@@ -19,6 +19,7 @@ void TransferPage::setModel(WalletModel *model)
 {
     ui->transfer_pane->setModel(model);
     ui->address_pane->setModel(model);
+    ui->donation_pane->setModel(model); 
 }
 
 bool TransferPage::handleURI(const QString &uri)
