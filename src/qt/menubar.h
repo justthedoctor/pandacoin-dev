@@ -34,7 +34,8 @@ private slots:
     void on_FileButton_clicked();
     void on_SettingsButton_clicked();
     void on_HelpButton_clicked();
-
+    void on_DonationButton_clicked();
+    
 private:
     Ui::MenuBar* ui;
 };
