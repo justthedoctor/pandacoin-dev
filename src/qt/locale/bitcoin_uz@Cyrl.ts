@@ -1956,7 +1956,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <name>MenuBar</name>
     <message>
         <location filename="../forms/menubar.ui" line="+55"/>
-        <source>Contacts</source>
+        <source>Mode</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
