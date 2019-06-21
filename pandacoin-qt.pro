@@ -305,6 +305,7 @@ HEADERS += src/qt/bitcoingui.h \
     src/qt/forms/createaccountwidget.h \
     src/qt/forms/transferpage.h \
     src/qt/forms/addressbookpage_new.h \
+    src/qt/forms/donationbook.h
     src/qt/addresstablemodel_impl.h \
     src/qt/forms/sendcoinstargetwidget.h \
     src/qt/portfoliooverviewtable.h \
@@ -326,6 +327,7 @@ SOURCES += src/qt/bitcoin.cpp src/qt/bitcoingui.cpp \
     src/qt/coincontroldialog.cpp \
     src/qt/coincontroltreewidget.cpp \
     src/qt/addressbookpage.cpp \
+    src/qt/forms/donationbook.cpp \
     src/qt/signverifymessagedialog.cpp \
     src/qt/aboutdialog.cpp \
     src/qt/editaddressdialog.cpp \
@@ -425,6 +427,7 @@ FORMS += \
     src/qt/forms/createaccountwidget.ui \
     src/qt/forms/transferpage.ui \
     src/qt/forms/addressbookpage_new.ui \
+    src/qt/forms/donationbook.ui \
     src/qt/forms/sendcoinstargetwidget.ui
 
 contains(USE_QRCODE, 1) {
