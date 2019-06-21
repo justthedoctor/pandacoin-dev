@@ -24,7 +24,7 @@ signals:
     void showSettingsMenu(QPoint);
     void showHelpMenu(QPoint);
     void showAddressBook(QPoint);
-    void showDonateBook(QPoint);
+    void showDonationBook(QPoint);
     
 public slots:
     void clientModeChanged(ClientMode);
@@ -34,7 +34,7 @@ private slots:
     void on_FileButton_clicked();
     void on_SettingsButton_clicked();
     void on_HelpButton_clicked();
-    void on_DonationButton_clicked();
+    void on_DonateButton_clicked();
     
 private:
     Ui::MenuBar* ui;
