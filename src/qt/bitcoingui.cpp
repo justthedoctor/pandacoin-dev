@@ -219,10 +219,11 @@ BitcoinGUI::BitcoinGUI(QWidget *parent)
     //Show menus as needed
     //connect(centralWidget->getMenuBar(), SIGNAL(showModeMenu(QPoint)), this, SLOT(showModeMenu(QPoint)));
     connect(centralWidget->getMenuBar(), SIGNAL(showAddressBook(QPoint)), this, SLOT(showAddressBook(QPoint)));
+    connect(centralWidget->getMenuBar(), SIGNAL(showDonationBook(QPoint)), this, SLOT(showDonationBook(QPoint)));
     connect(centralWidget->getMenuBar(), SIGNAL(showFileMenu(QPoint)), this, SLOT(showFileMenu(QPoint)));
     connect(centralWidget->getMenuBar(), SIGNAL(showSettingsMenu(QPoint)), this, SLOT(showSettingsMenu(QPoint)));
     connect(centralWidget->getMenuBar(), SIGNAL(showHelpMenu(QPoint)), this, SLOT(showHelpMenu(QPoint)));
-
+    
     connect(centralWidget->getLockBar(), SIGNAL(requestLock()), this, SLOT(lockWallet()));
     connect(centralWidget->getLockBar(), SIGNAL(requestUnlock(bool)), this, SLOT(unlockWallet(bool)));
     connect(centralWidget->getLockBar(), SIGNAL(requestEncrypt(bool)), this, SLOT(encryptWallet(bool)));
