@@ -40,6 +40,15 @@ void MenuBar::on_ModeButton_clicked()
       ui->ModeButton->update();
 }
 
+void MenuBar::on_DonateButton_clicked()
+{
+    QPoint pos=ui->FileButton->mapToGlobal(QPoint(0,0));
+      pos.setY(pos.y()+ui->FileButton->height());
+      emit showDonationBook(pos);
+      ui->ModeButton->update();
+}
+
+
 void MenuBar::on_FileButton_clicked()
 {
     QPoint pos=ui->FileButton->mapToGlobal(QPoint(0,0));

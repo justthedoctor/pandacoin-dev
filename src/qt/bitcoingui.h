@@ -143,7 +143,7 @@ public slots:
 
  	/** Shorcut to show Address Book as needed. */
 	void showAddressBook(QPoint pos);
-
+    void showDonationBook(QPoint pos);
 private slots:
     /** Switch to overview (home) page */
     void gotoOverviewPage();
