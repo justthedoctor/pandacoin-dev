@@ -102,7 +102,6 @@ void DonationBookPage::setModel(WalletModel* model_)
         connect(ui->address_book_transfer_from_next_button, SIGNAL(pressed()), this, SLOT(onAddressBookSendCoins()));
         connect(ui->address_book_done_button, SIGNAL(pressed()), this, SLOT(onAddressBookChangeDone()));
         connect(model, SIGNAL(addressBookUpdated()), this, SLOT(addressBookUpdated()));
-        connect(ui->address_book_delete_button, SIGNAL(pressed()), this, SLOT(onAddressBookDeletePressed()));
         connect(ui->deleteButton, SIGNAL(pressed()), this, SLOT(onAddressBookDeletePressed()));
         connect(ui->copyToClipboard, SIGNAL(pressed()), this, SLOT(onAddressBookCopyToClipboard()));
         connect(ui->showQRCode, SIGNAL(pressed()), this, SLOT(onAddressBookShowQRCode()));
