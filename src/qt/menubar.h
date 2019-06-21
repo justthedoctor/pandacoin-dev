@@ -24,7 +24,7 @@ signals:
     void showSettingsMenu(QPoint);
     void showHelpMenu(QPoint);
     void showAddressBook(QPoint);
-    void showDonationBook(QPoint);
+    void showDonateBook(QPoint);
     
 public slots:
     void clientModeChanged(ClientMode);
