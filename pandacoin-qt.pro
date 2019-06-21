@@ -305,7 +305,7 @@ HEADERS += src/qt/bitcoingui.h \
     src/qt/forms/createaccountwidget.h \
     src/qt/forms/transferpage.h \
     src/qt/forms/addressbookpage_new.h \
-    src/qt/forms/donationbook.h
+    src/qt/forms/donationbook.h \
     src/qt/addresstablemodel_impl.h \
     src/qt/forms/sendcoinstargetwidget.h \
     src/qt/portfoliooverviewtable.h \
