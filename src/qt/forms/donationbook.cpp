@@ -1,5 +1,5 @@
-#include "addressbookpage_new.h"
-#include "ui_addressbookpage_new.h"
+#include "donationbook.h"
+#include "ui_donationbook.h"
 #include "walletmodel.h"
 #include "wallet.h"
 #include "accountmodel.h"
@@ -48,9 +48,9 @@ private:
     QString filterString;
 };
 
-AddressBookPage_new::AddressBookPage_new(QWidget *parent)
+DonationBookPage::DonationBookPage(QWidget *parent)
 : QFrame(parent)
-, ui(new Ui::AddressBookPage_new)
+, ui(new Ui::DonationBookPage)
 , model(NULL)
 , filterModel(NULL)
 {
@@ -63,12 +63,12 @@ AddressBookPage_new::AddressBookPage_new(QWidget *parent)
     #endif
 }
 
-AddressBookPage_new::~AddressBookPage_new()
+DonationBookPage::~DonationBookPage()
 {
     delete ui;
 }
 
-void AddressBookPage_new::setModel(WalletModel* model_)
+void DonationBookPage::setModel(WalletModel* model_)
 {
     model = model_;
     if(model)
@@ -116,12 +116,12 @@ void AddressBookPage_new::setModel(WalletModel* model_)
     updateDisplayUnit();
 }
 
-void AddressBookPage_new::onSearch()
+void DonationBookPage::onSearch()
 {
     filterModel->setSearchString(ui->address_searchbox->text());
 }
 
-void AddressBookPage_new::onSelectionChanged()
+void DonationBookPage::onSelectionChanged()
 {
     QString selectedAccountLabel = filterModel->data(ui->address_list->selectionModel()->currentIndex()).toString();
     QString selectedAccountAddress = model->getAddressTableModel()->addressForLabel(selectedAccountLabel);
@@ -135,7 +135,7 @@ void AddressBookPage_new::onSelectionChanged()
     ui->address_book_view_frame->setVisible(true);
 }
 
-void AddressBookPage_new::addressBookUpdated()
+void DonationBookPage::addressBookUpdated()
 {
     filterModel->invalidate();
     ui->address_list->selectionModel()->setCurrentIndex(filterModel->index(0,0),QItemSelectionModel::Select);
@@ -144,14 +144,14 @@ void AddressBookPage_new::addressBookUpdated()
     ui->address_book_view_frame->setVisible(true);
 }
 
-void AddressBookPage_new::onAddressBookEdit()
+void DonationBookPage::onAddressBookEdit()
 {
     ui->address_book_edit_frame->setVisible(true);
     ui->address_book_view_frame->setVisible(false);
 }
 
 
-void AddressBookPage_new::onAddressBookSendCoins()
+void DonationBookPage::onAddressBookSendCoins()
 {
     std::vector<SendCoinsRecipient> recipients;
 
@@ -195,7 +195,7 @@ void AddressBookPage_new::onAddressBookSendCoins()
     }
 }
 
-void AddressBookPage_new::onAddressBookChangeDone()
+void DonationBookPage::onAddressBookChangeDone()
 {
     QString selectedAccountLabel = filterModel->data(ui->address_list->selectionModel()->currentIndex()).toString();
     QString selectedAccountAddress = model->getAddressTableModel()->addressForLabel(selectedAccountLabel);
@@ -218,7 +218,7 @@ void AddressBookPage_new::onAddressBookChangeDone()
     ui->address_book_view_frame->setVisible(true);
 }
 
-void AddressBookPage_new::onAddressBookDeletePressed()
+void DonationBookPage::onAddressBookDeletePressed()
 {
     QString selectedAccountLabel = filterModel->data(ui->address_list->selectionModel()->currentIndex()).toString();
     QString selectedAccountAddress = model->getAddressTableModel()->addressForLabel(selectedAccountLabel);
@@ -235,14 +235,14 @@ void AddressBookPage_new::onAddressBookDeletePressed()
     ui->address_book_view_frame->setVisible(true);
 }
 
-void AddressBookPage_new::onAddressBookCopyToClipboard()
+void DonationBookPage::onAddressBookCopyToClipboard()
 {
     QString selectedAccountLabel = filterModel->data(ui->address_list->selectionModel()->currentIndex()).toString();
     QString selectedAccountAddress = model->getAddressTableModel()->addressForLabel(selectedAccountLabel);
     QApplication::clipboard()->setText(selectedAccountAddress);
 }
 
-void AddressBookPage_new::onAddressBookShowQRCode()
+void DonationBookPage::onAddressBookShowQRCode()
 {
     #ifdef USE_QRCODE
         QString selectedAccountLabel = filterModel->data(ui->address_list->selectionModel()->currentIndex()).toString();
@@ -255,14 +255,14 @@ void AddressBookPage_new::onAddressBookShowQRCode()
 }
 
 
-void AddressBookPage_new::onAddressBookVerifyMessage()
+void DonationBookPage::onAddressBookVerifyMessage()
 {
     QString selectedAccountLabel = filterModel->data(ui->address_list->selectionModel()->currentIndex()).toString();
     QString selectedAccountAddress = model->getAddressTableModel()->addressForLabel(selectedAccountLabel);
     emit onVerifyMessage(selectedAccountAddress);
 }
 
-void AddressBookPage_new::onAddressBookNewAddress()
+void DonationBookPage::onAddressBookNewAddress()
 {
     if(!model)
         return;
@@ -278,7 +278,7 @@ void AddressBookPage_new::onAddressBookNewAddress()
     }
 }
 
-void AddressBookPage_new::updateDisplayUnit()
+void DonationBookPage::updateDisplayUnit()
 {
     if(model && model->getOptionsModel())
     {
