@@ -94,12 +94,16 @@
       <attribute name="title">
        <string>Donation Book</string>
       </attribute>
-            <layout class="QVBoxLayout" name="verticalLayout_4">
+      <layout class="QVBoxLayout" name="verticalLayout_4">
        <item>
-	        <widget class="DonationBookPage" name="donation_pane" native="true"/>
+        <widget class="DonationBookPage" name="donation_pane" native="true"/>
        </item>
       </layout>
-
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
  <customwidgets>
   <customwidget>
    <class>AddressBookPage_new</class>
