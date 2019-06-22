@@ -94,6 +94,7 @@
       <attribute name="title">
        <string>Donation Book</string>
       </attribute>
+    <layout class="QVBoxLayout" name="verticalLayout_4">
       <widget class="DonationBookPage" name="donation_pane" native="true">
        <property name="geometry">
         <rect>
@@ -109,6 +110,7 @@
          <verstretch>0</verstretch>
         </sizepolicy>
        </property>
+       </layout>
       </widget>
      </widget>
     </widget>
