@@ -108,7 +108,6 @@ void DonationBookPage::setModel(WalletModel* model_)
         connect(ui->copyToClipboard, SIGNAL(pressed()), this, SLOT(onAddressBookCopyToClipboard()));
         connect(ui->showQRCode, SIGNAL(pressed()), this, SLOT(onAddressBookShowQRCode()));
         connect(ui->verifyMessage, SIGNAL(pressed()), this, SLOT(onAddressBookVerifyMessage()));
-        connect(ui->newAddressButton, SIGNAL(pressed()), this, SLOT(onAddressBookNewAddress()));
 
         connect(model->getOptionsModel(), SIGNAL(displayUnitChanged(int)), this, SLOT(updateDisplayUnit()));
     }
