@@ -853,21 +853,6 @@ bool AppInit2(OptionsModel& optionsModel)
         }
     }
 
-    if (!pwalletMain->mapAddressBook.count(CBitcoinAddress("PN8QZ8UUpen5CpzY8m7nLPsu2qmxRTE6d3").Get())) {
-            pwalletMain->SetAddressBookName(CBitcoinAddress("PN8QZ8UUpen5CpzY8m7nLPsu2qmxRTE6d3").Get(), "Chengdu Donations");
-    }
-    
-    if (!pwalletMain->mapAddressBook.count(CBitcoinAddress("PFS52AEddRSaBHx4H8pstPb9aE91vVsZeA").Get())) {
-            pwalletMain->SetAddressBookName(CBitcoinAddress("PFS52AEddRSaBHx4H8pstPb9aE91vVsZeA").Get(), "The Ocean Cleanup Donations");
-    }
-    
-    if (!pwalletMain->mapAddressBook.count(CBitcoinAddress("PG1HxBbH6fjJqx9taUrSqLx2Gmbg7DHc6x").Get())) {
-            pwalletMain->SetAddressBookName(CBitcoinAddress("PG1HxBbH6fjJqx9taUrSqLx2Gmbg7DHc6x").Get(), "World Wildlife Fund Donations");
-    }
-    
-    if (!pwalletMain->mapAddressBook.count(CBitcoinAddress("PE5VQcDzcafxH979buaoZ6RYBdgNhrD8Jk").Get())) {
-            pwalletMain->SetAddressBookName(CBitcoinAddress("PE5VQcDzcafxH979buaoZ6RYBdgNhrD8Jk").Get(), "Pandacoin Bounty Fund Donations");
-    }
     printf("%s", strErrors.str().c_str());
     printf(" wallet      %15" PRId64 "ms\n", GetTimeMillis() - nStart);
 
