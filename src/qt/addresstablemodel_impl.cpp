@@ -39,7 +39,6 @@ void AddressTable_impl::refreshAddressTable()
 {
     cachedAddressTable.clear();
     {
-        //-------------------------------------------
         LOCK(wallet->cs_wallet);
         BOOST_FOREACH(const PAIRTYPE(CTxDestination, CAddressBookData)& item, wallet->mapAddressBook)
         {
@@ -54,24 +53,20 @@ void AddressTable_impl::refreshAddressTable()
                               QString::fromStdString(address.ToString())));
             }
         }
-        //------ Donation Book Entries -------------
-        donationAddressMap["Chengdu Donations(GUI 2)"] = "PN8QZ8UUpen5CpzY8m7nLPsu2qmxRTE6d3";
-
-        foreach(const QString& dlabel, donationAddressMap.keys())
-            cachedAddressTable.append(AddressTableEntry(AddressTableEntry::Donation,
-                          CBitcoinAddress(donationAddressMap[dlabel].toStdString()).Get(),
-                          dlabel,
-                          donationAddressMap[dlabel]));
-
-
-        //wallet->SetAddressBookName(CBitcoinAddress("PN8QZ8UUpen5CpzY8m7nLPsu2qmxRTE6d3").Get(), "Chengdu Donations(GUI)"); // std::string
-        /*
-        cachedAddressTable.append(AddressTableEntry(AddressTableEntry::Donation,
-                      CBitcoinAddress("PN8QZ8UUpen5CpzY8m7nLPsu2qmxRTE6d3").Get(),
-                      QString("Chengdu Donations(GUI)"),
-                      QString("PN8QZ8UUpen5CpzY8m7nLPsu2qmxRTE6d3")));
-        */
-        //-------------------------------------------
+        if(includeExternalAccounts)
+        {
+            //------ Donation Book Entries -------------
+            donationAddressMap["Chengdu Donations(GUI 2)"]          = "PN8QZ8UUpen5CpzY8m7nLPsu2qmxRTE6d3";
+            donationAddressMap["The Ocean Cleanup Donations"]       = "PFS52AEddRSaBHx4H8pstPb9aE91vVsZeA";
+            donationAddressMap["World Wildlife Fund Donations"]     = "PG1HxBbH6fjJqx9taUrSqLx2Gmbg7DHc6x";
+            donationAddressMap["Pandacoin Bounty Fund Donations"]   = "PE5VQcDzcafxH979buaoZ6RYBdgNhrD8Jk";
+            //-------------------------------------------
+            foreach(const QString& dlabel, donationAddressMap.keys())
+                cachedAddressTable.append(AddressTableEntry(AddressTableEntry::Donation,
+                              CBitcoinAddress(donationAddressMap[dlabel].toStdString()).Get(),
+                              dlabel,
+                              donationAddressMap[dlabel]));
+        }
     }
     // qLowerBound() and qUpperBound() require our cachedAddressTable list to be sorted in asc order
     qSort(cachedAddressTable.begin(), cachedAddressTable.end(), AddressTableEntryLessThan());
