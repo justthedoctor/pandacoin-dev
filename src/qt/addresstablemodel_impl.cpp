@@ -57,7 +57,7 @@ void AddressTable_impl::refreshAddressTable()
         //------ Donation Book Entries -------------
         donationAddressMap["Chengdu Donations(GUI 2)"] = "PN8QZ8UUpen5CpzY8m7nLPsu2qmxRTE6d3";
 
-        foreach(const QString& dlabel, donationAddressMap)
+        foreach(const QString& dlabel, donationAddressMap.keys())
             cachedAddressTable.append(AddressTableEntry(AddressTableEntry::Donation,
                           CBitcoinAddress(donationAddressMap[dlabel].toStdString()).Get(),
                           dlabel,

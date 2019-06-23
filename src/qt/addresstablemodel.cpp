@@ -294,6 +294,10 @@ QString AddressTableModel::labelForAddress(const QString &address) const
             return QString::fromStdString(mi->second.name);
         }
     }
+    if (priv->donationAddressMap.values().contains(address))
+        foreach (const QString& label, priv->donationAddressMap.keys())
+            if (priv->donationAddressMap[label] == address)
+                return label;
     return QString();
 }
 
@@ -310,6 +314,8 @@ QString AddressTableModel::addressForLabel(const QString &label) const
             }
         }
     }
+    if (priv->donationAddressMap.contains(label))
+        return priv->donationAddressMap[label];
     return QString();
 }
 
