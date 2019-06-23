@@ -8,7 +8,7 @@ namespace Ui
     class DonationBookPage;
 }
 class WalletModel;
-class AddressFilterModel;
+class DonationAddressFilterModel;
 
 class DonationBookPage : public QFrame
 {
@@ -39,7 +39,7 @@ signals:
 private:
     Ui::DonationBookPage *ui;
     WalletModel* model;
-    AddressFilterModel* filterModel;
+    DonationAddressFilterModel* filterModel;
 };
 
 #endif // DONATIONBOOK_H

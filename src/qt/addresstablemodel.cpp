@@ -12,11 +12,8 @@
 
 #include <QFont>
 #include <QColor>
-
 const QString AddressTableModel::Send = "S";
 const QString AddressTableModel::Receive = "R";
-
-
 
 
 
@@ -54,7 +51,6 @@ QVariant AddressTableModel::data(const QModelIndex &index, int role) const
         return QVariant();
 
     AddressTableEntry *rec = static_cast<AddressTableEntry*>(index.internalPointer());
-
     if(role == Qt::DisplayRole || role == Qt::EditRole)
     {
         switch(index.column())
@@ -272,10 +268,10 @@ bool AddressTableModel::removeRows(int row, int count, const QModelIndex &parent
 {
     Q_UNUSED(parent);
     AddressTableEntry *rec = priv->index(row);
-    if(count != 1 || !rec || rec->type == AddressTableEntry::Receiving)
+    if(count != 1 || !rec || rec->type == AddressTableEntry::Receiving || rec->type == AddressTableEntry::Donation)
     {
         // Can only remove one row at a time, and cannot remove rows not in model.
-        // Also refuse to remove receiving addresses.
+        // Also refuse to remove receiving and donation addresses.
         return false;
     }
     {

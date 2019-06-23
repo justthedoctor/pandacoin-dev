@@ -14,11 +14,10 @@
 #include "editaddressdialog.h"
 #include "signverifymessagedialog.h"
 
-
-class AddressFilterModel: public QSortFilterProxyModel
+class DonationAddressFilterModel: public QSortFilterProxyModel
 {
 public:
-    AddressFilterModel(QObject* parent=NULL)
+    DonationAddressFilterModel(QObject* parent=NULL)
     : QSortFilterProxyModel(parent)
     {
 
@@ -26,6 +25,10 @@ public:
     bool filterAcceptsRow(int sourceRow, const QModelIndex &sourceParent) const
     {
         QModelIndex index = sourceModel()->index(sourceRow, 0, sourceParent);
+        QVariant vtype = sourceModel()->data(index, AccountModel::TypeRole);
+        if (!vtype.isNull() && vtype.toInt() != AddressTableEntry::Donation)
+            return false; // only show Donation addresses
+
         if(index.data().toString().contains(filterString))
         {
             return true;
@@ -75,7 +78,7 @@ void DonationBookPage::setModel(WalletModel* model_)
     {
         //LEAKLEAK
         SingleColumnAccountModel* listModel=new SingleColumnAccountModel(model->getExternalAccountModel(), false, false);
-        filterModel = new AddressFilterModel();
+        filterModel = new DonationAddressFilterModel();
         filterModel->setSourceModel(listModel);
         ui->address_list->setModel(filterModel);
         ui->address_list->selectionModel()->setCurrentIndex(filterModel->index(0,0),QItemSelectionModel::Select);

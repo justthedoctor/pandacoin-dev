@@ -12,8 +12,10 @@ class AddressTable_impl;
 struct AddressTableEntry
 {
     enum Type {
+        None,
         Sending,
-        Receiving
+        Receiving,
+        Donation
     };
 
     Type type;
@@ -21,7 +23,7 @@ struct AddressTableEntry
     QString address;
 
     private:
-    AddressTableEntry() {}
+    AddressTableEntry() { type = None;}
     AddressTableEntry(Type type, const CTxDestination& destination, const QString &label, const QString &address)
     : type(type), label(label), address(address), destination(destination) {}
     AddressTableEntry(Type type, const QString &label, const QString &address)
@@ -36,6 +38,7 @@ class AddressTable_impl
 {
 public:
     CWallet *wallet;
+    QMap<QString,QString> donationAddressMap;
     QList<AddressTableEntry> cachedAddressTable;
     QAbstractAddressTableModel *parent;
 
@@ -46,6 +49,7 @@ public:
     QString getLabel(int idx);
     QString getAddress(int idx);
     qint64 getBalance(int idx);
+    AddressTableEntry::Type getType(int idx);
     AddressTableEntry *index(int idx);
 private:
     bool includeExternalAccounts;
