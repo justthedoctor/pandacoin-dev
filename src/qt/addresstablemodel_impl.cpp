@@ -56,16 +56,19 @@ void AddressTable_impl::refreshAddressTable()
         if(includeExternalAccounts)
         {
             //------ Donation Book Entries -------------
-            donationAddressMap["Chengdu Donations(GUI 2)"]          = "PN8QZ8UUpen5CpzY8m7nLPsu2qmxRTE6d3";
-            donationAddressMap["The Ocean Cleanup Donations"]       = "PFS52AEddRSaBHx4H8pstPb9aE91vVsZeA";
-            donationAddressMap["World Wildlife Fund Donations"]     = "PG1HxBbH6fjJqx9taUrSqLx2Gmbg7DHc6x";
+            donationAddressMap["Chengdu Donations"]          = "PN8QZ8UUpen5CpzY8m7nLPsu2qmxRTE6d3"; // https://cryptodepot.org/pnd4pnd/
+            donationAddressMap["The Ocean Cleanup Donations"]       = "PSECCwBvFKCm9WtzDnWVfALgGSgbx2xHAf";
+            donationAddressMap["World Wildlife Fund Donations"]     = "PG1HxBbH6fjJqx9taUrSqLx2Gmbg7DHc6x"; // https://cryptodepot.org/pnd4pnd/
             donationAddressMap["Pandacoin Bounty Fund Donations"]   = "PE5VQcDzcafxH979buaoZ6RYBdgNhrD8Jk";
+            donationAddressMap["Pandas International Donation Address"]   = "PAMpCh1n3c2Y7HNn7ERZh8JnzRvF34scv6"; // https://cryptodepot.org/pnd4pnd/
+            donationAddressMap["Pandacoin Folding at Home Donation Address"]   = "PFEyuHiUWYw19VMN2CnMXkDwVTDGmoekF9"; // http://pandacoinfah.com/
+
             //-------------------------------------------
             foreach(const QString& dlabel, donationAddressMap.keys())
                 cachedAddressTable.append(AddressTableEntry(AddressTableEntry::Donation,
                               CBitcoinAddress(donationAddressMap[dlabel].toStdString()).Get(),
                               dlabel,
-                              donationAddressMap[dlabel]));
+                              donationAddressMap[dlabel]));PAMpCh1n3c2Y7HNn7ERZh8JnzRvF34scv6
         }
     }
     // qLowerBound() and qUpperBound() require our cachedAddressTable list to be sorted in asc order
