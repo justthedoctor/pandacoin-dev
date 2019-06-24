@@ -56,12 +56,12 @@ void AddressTable_impl::refreshAddressTable()
         if(includeExternalAccounts)
         {
             //------ Donation Book Entries -------------
-            donationAddressMap["Chengdu Donations"]          = "PN8QZ8UUpen5CpzY8m7nLPsu2qmxRTE6d3"; // https://cryptodepot.org/pnd4pnd/
+            donationAddressMap["Chengdu Donations"]          = "PN8QZ8UUpen5CpzY8m7nLPsu2qmxRTE6d3";
             donationAddressMap["The Ocean Cleanup Donations"]       = "PSECCwBvFKCm9WtzDnWVfALgGSgbx2xHAf";
-            donationAddressMap["World Wildlife Fund Donations"]     = "PG1HxBbH6fjJqx9taUrSqLx2Gmbg7DHc6x"; // https://cryptodepot.org/pnd4pnd/
+            donationAddressMap["World Wildlife Fund Donations"]     = "PG1HxBbH6fjJqx9taUrSqLx2Gmbg7DHc6x";
             donationAddressMap["Pandacoin Bounty Fund Donations"]   = "PE5VQcDzcafxH979buaoZ6RYBdgNhrD8Jk";
-            donationAddressMap["Pandas International Donation Address"]   = "PAMpCh1n3c2Y7HNn7ERZh8JnzRvF34scv6"; // https://cryptodepot.org/pnd4pnd/
-            donationAddressMap["Pandacoin Folding at Home Donation Address"]   = "PFEyuHiUWYw19VMN2CnMXkDwVTDGmoekF9"; // http://pandacoinfah.com/
+            donationAddressMap["Pandas International Donation Address"]   = "PAMpCh1n3c2Y7HNn7ERZh8JnzRvF34scv6"; 
+            donationAddressMap["Pandacoin Folding at Home Donation Address"]   = "PFEyuHiUWYw19VMN2CnMXkDwVTDGmoekF9";
 
             //-------------------------------------------
             foreach(const QString& dlabel, donationAddressMap.keys())
