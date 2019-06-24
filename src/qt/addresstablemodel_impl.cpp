@@ -60,8 +60,8 @@ void AddressTable_impl::refreshAddressTable()
             donationAddressMap["The Ocean Cleanup Donations"]       = "PSECCwBvFKCm9WtzDnWVfALgGSgbx2xHAf";
             donationAddressMap["World Wildlife Fund Donations"]     = "PG1HxBbH6fjJqx9taUrSqLx2Gmbg7DHc6x";
             donationAddressMap["Pandacoin Bounty Fund Donations"]   = "PE5VQcDzcafxH979buaoZ6RYBdgNhrD8Jk";
-            donationAddressMap["Pandas International Donation"]   = "PAMpCh1n3c2Y7HNn7ERZh8JnzRvF34scv6"; 
-            donationAddressMap["Pandacoin Folding @ Home Donation"]   = "PFEyuHiUWYw19VMN2CnMXkDwVTDGmoekF9";
+            donationAddressMap["Pandas International Donations"]   = "PAMpCh1n3c2Y7HNn7ERZh8JnzRvF34scv6"; 
+            donationAddressMap["Pandacoin Folding @ Home Donations"]   = "PFEyuHiUWYw19VMN2CnMXkDwVTDGmoekF9";
 
             //-------------------------------------------
             foreach(const QString& dlabel, donationAddressMap.keys())
