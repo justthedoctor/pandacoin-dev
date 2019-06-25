@@ -282,7 +282,7 @@
            <item>
             <widget class="QLabel" name="donationbook_account_description_heading">
              <property name="text">
-              <string notr="true">Description</string>
+              <string notr="true">Web Address</string>
              </property>
             </widget>
            </item>
