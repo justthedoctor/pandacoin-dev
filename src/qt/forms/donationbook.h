@@ -22,15 +22,12 @@ public:
 private slots:
     void onSearch();
     void onSelectionChanged();
-    void onAddressBookEdit();
     void onAddressBookSendCoins();
-    void onAddressBookChangeDone();
     void addressBookUpdated();
     void onAddressBookDeletePressed();
     void onAddressBookCopyToClipboard();
     void onAddressBookShowQRCode();
     void onAddressBookVerifyMessage();
-    void onAddressBookNewAddress();
     void updateDisplayUnit();
 
 signals:

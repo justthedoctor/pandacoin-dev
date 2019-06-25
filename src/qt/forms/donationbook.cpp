@@ -59,8 +59,6 @@ DonationBookPage::DonationBookPage(QWidget *parent)
 {
     ui->setupUi(this);
 
-    ui->address_book_edit_frame->setVisible(false);
-
     #ifndef USE_QRCODE
     ui->showQRCode->setVisible(false);
     #endif
@@ -101,9 +99,7 @@ void DonationBookPage::setModel(WalletModel* model_)
         connect(ui->address_searchbox, SIGNAL(returnPressed()), this, SLOT(onSearch()));
         connect(ui->address_search_button, SIGNAL(pressed()), this, SLOT(onSearch()));
         connect(ui->address_list->selectionModel(), SIGNAL(currentChanged(QModelIndex,QModelIndex)), this, SLOT(onSelectionChanged()));
-        connect(ui->address_book_edit_button, SIGNAL(pressed()), this, SLOT(onAddressBookEdit()));
         connect(ui->address_book_transfer_from_next_button, SIGNAL(pressed()), this, SLOT(onAddressBookSendCoins()));
-        connect(ui->address_book_done_button, SIGNAL(pressed()), this, SLOT(onAddressBookChangeDone()));
         connect(model, SIGNAL(addressBookUpdated()), this, SLOT(addressBookUpdated()));
         connect(ui->copyToClipboard, SIGNAL(pressed()), this, SLOT(onAddressBookCopyToClipboard()));
         connect(ui->showQRCode, SIGNAL(pressed()), this, SLOT(onAddressBookShowQRCode()));
@@ -125,13 +121,12 @@ void DonationBookPage::onSelectionChanged()
 {
     QString selectedAccountLabel = filterModel->data(ui->address_list->selectionModel()->currentIndex()).toString();
     QString selectedAccountAddress = model->getAddressTableModel()->addressForLabel(selectedAccountLabel);
+    QString selectedAccountDescription = model->getAddressTableModel()->descriptionForLabel(selectedAccountLabel);
 
     ui->account_address_label->setText(selectedAccountLabel);
     ui->addressbook_account_address_value->setText(selectedAccountAddress);
-    ui->account_name_editbox->setText(selectedAccountLabel);
-    ui->account_address_editbox->setText(selectedAccountAddress);
+    ui->donationbook_account_description_value->setText(selectedAccountDescription);
 
-    ui->address_book_edit_frame->setVisible(false);
     ui->address_book_view_frame->setVisible(true);
 }
 
@@ -140,16 +135,8 @@ void DonationBookPage::addressBookUpdated()
     filterModel->invalidate();
     ui->address_list->selectionModel()->setCurrentIndex(filterModel->index(0,0),QItemSelectionModel::Select);
     onSelectionChanged();
-    ui->address_book_edit_frame->setVisible(false);
     ui->address_book_view_frame->setVisible(true);
 }
-
-void DonationBookPage::onAddressBookEdit()
-{
-    ui->address_book_edit_frame->setVisible(true);
-    ui->address_book_view_frame->setVisible(false);
-}
-
 
 void DonationBookPage::onAddressBookSendCoins()
 {
@@ -195,29 +182,6 @@ void DonationBookPage::onAddressBookSendCoins()
     }
 }
 
-void DonationBookPage::onAddressBookChangeDone()
-{
-    QString selectedAccountLabel = filterModel->data(ui->address_list->selectionModel()->currentIndex()).toString();
-    QString selectedAccountAddress = model->getAddressTableModel()->addressForLabel(selectedAccountLabel);
-    QString newAccountLabel = ui->account_name_editbox->text();
-    QString newAccountAddress = ui->account_address_editbox->text();
-
-    int index = model->getAddressTableModel()->lookupAddress(selectedAccountAddress);
-    if(index != -1)
-    {
-        if(newAccountAddress != selectedAccountAddress)
-        {
-            model->getAddressTableModel()->setData(model->getAddressTableModel()->index(index,AddressTableModel::Address,QModelIndex()), newAccountAddress, Qt::EditRole);
-        }
-        if(newAccountLabel != selectedAccountLabel)
-        {
-            model->getAddressTableModel()->setData(model->getAddressTableModel()->index(index,AddressTableModel::Label,QModelIndex()), newAccountLabel, Qt::EditRole);
-        }
-    }
-    ui->address_book_edit_frame->setVisible(false);
-    ui->address_book_view_frame->setVisible(true);
-}
-
 void DonationBookPage::onAddressBookDeletePressed()
 {
     QString selectedAccountLabel = filterModel->data(ui->address_list->selectionModel()->currentIndex()).toString();
@@ -231,7 +195,6 @@ void DonationBookPage::onAddressBookDeletePressed()
         ui->address_list->selectionModel()->setCurrentIndex(filterModel->index(0,0),QItemSelectionModel::Select);
         onSelectionChanged();
     }
-    ui->address_book_edit_frame->setVisible(false);
     ui->address_book_view_frame->setVisible(true);
 }
 
@@ -260,22 +223,6 @@ void DonationBookPage::onAddressBookVerifyMessage()
     QString selectedAccountLabel = filterModel->data(ui->address_list->selectionModel()->currentIndex()).toString();
     QString selectedAccountAddress = model->getAddressTableModel()->addressForLabel(selectedAccountLabel);
     emit onVerifyMessage(selectedAccountAddress);
-}
-
-void DonationBookPage::onAddressBookNewAddress()
-{
-    if(!model)
-        return;
-    EditAddressDialog dlg(EditAddressDialog::NewSendingAddress, this);
-    dlg.setModel(model->getAddressTableModel());
-    if(dlg.exec())
-    {
-        QString newAddressToSelect = dlg.getAddress();
-        //ui->address_list->selectionModel()->setCurrentIndex(filterModel->index(newAddressToSelect,0),QItemSelectionModel::Select);
-        onSelectionChanged();
-        ui->address_book_edit_frame->setVisible(true);
-        ui->address_book_view_frame->setVisible(false);
-    }
 }
 
 void DonationBookPage::updateDisplayUnit()

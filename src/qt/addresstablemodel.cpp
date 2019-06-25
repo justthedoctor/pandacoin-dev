@@ -294,10 +294,9 @@ QString AddressTableModel::labelForAddress(const QString &address) const
             return QString::fromStdString(mi->second.name);
         }
     }
-    if (priv->donationAddressMap.values().contains(address))
-        foreach (const QString& label, priv->donationAddressMap.keys())
-            if (priv->donationAddressMap[label] == address)
-                return label;
+    foreach (const AddressTableEntry& entry, priv->donationAddressTable)
+        if (entry.address == address)
+            return entry.label;
     return QString();
 }
 
@@ -314,8 +313,18 @@ QString AddressTableModel::addressForLabel(const QString &label) const
             }
         }
     }
-    if (priv->donationAddressMap.contains(label))
-        return priv->donationAddressMap[label];
+    foreach (const AddressTableEntry& entry, priv->donationAddressTable)
+        if (entry.label == label)
+            return entry.address;
+    return QString();
+}
+
+QString AddressTableModel::descriptionForLabel(const QString &label) const
+{
+    // the description field is only for donation book addresses
+    foreach (const AddressTableEntry& entry, priv->donationAddressTable)
+        if (entry.label == label)
+            return entry.description;
     return QString();
 }
 
@@ -331,4 +340,3 @@ int AddressTableModel::lookupAddress(const QString &address) const
     {
         return lst.at(0).row();
     }
-}

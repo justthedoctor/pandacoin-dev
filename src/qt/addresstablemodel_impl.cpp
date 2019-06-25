@@ -35,6 +35,11 @@ AddressTable_impl::AddressTable_impl(CWallet *wallet, QAbstractAddressTableModel
 
 }
 
+void AddressTable_impl::addDonationAddress(const QString &label, const QString &address, const QString &description)
+{
+    donationAddressTable.append(AddressTableEntry(AddressTableEntry::Donation, label, address, description));
+}
+
 void AddressTable_impl::refreshAddressTable()
 {
     cachedAddressTable.clear();
@@ -56,19 +61,18 @@ void AddressTable_impl::refreshAddressTable()
         if(includeExternalAccounts)
         {
             //------ Donation Book Entries -------------
-            donationAddressMap["Chengdu Donations"]          = "PN8QZ8UUpen5CpzY8m7nLPsu2qmxRTE6d3";
-            donationAddressMap["The Ocean Cleanup Donations"]       = "PSECCwBvFKCm9WtzDnWVfALgGSgbx2xHAf";
-            donationAddressMap["World Wildlife Fund Donations"]     = "PG1HxBbH6fjJqx9taUrSqLx2Gmbg7DHc6x";
-            donationAddressMap["Pandacoin Bounty Fund Donations"]   = "PE5VQcDzcafxH979buaoZ6RYBdgNhrD8Jk";
-            donationAddressMap["Pandas International Donations"]   = "PAMpCh1n3c2Y7HNn7ERZh8JnzRvF34scv6";
-            donationAddressMap["Pandacoin Folding @ Home Donations"]   = "PFEyuHiUWYw19VMN2CnMXkDwVTDGmoekF9";
-
+            addDonationAddress("Chengdu Donations", "PN8QZ8UUpen5CpzY8m7nLPsu2qmxRTE6d3", "<div><b>B Test B</b><p>This is a basic description in HTML. <ul><li>1</li><li>2</li><li>3</li></li></ul>   Please visit our site <a href='https://www.google.com'>Test Link</a></p></div>");
+            addDonationAddress("The Ocean Cleanup Donations", "PSECCwBvFKCm9WtzDnWVfALgGSgbx2xHAf");
+            addDonationAddress("World Wildlife Fund Donations", "PG1HxBbH6fjJqx9taUrSqLx2Gmbg7DHc6x");
+            addDonationAddress("Pandacoin Bounty Fund Donations", "PE5VQcDzcafxH979buaoZ6RYBdgNhrD8Jk");
+            addDonationAddress("Pandas International Donations", "PAMpCh1n3c2Y7HNn7ERZh8JnzRvF34scv6");
+            addDonationAddress("Pandacoin Folding @ Home Donations", "PFEyuHiUWYw19VMN2CnMXkDwVTDGmoekF9");
             //-------------------------------------------
-            foreach(const QString& dlabel, donationAddressMap.keys())
+            foreach(const AddressTableEntry& entry, donationAddressTable)
                 cachedAddressTable.append(AddressTableEntry(AddressTableEntry::Donation,
-                              CBitcoinAddress(donationAddressMap[dlabel].toStdString()).Get(),
-                              dlabel,
-                              donationAddressMap[dlabel]));
+                              CBitcoinAddress(entry.address.toStdString()).Get(),
+                              entry.label,
+                              entry.address));
         }
     }
     // qLowerBound() and qUpperBound() require our cachedAddressTable list to be sorted in asc order

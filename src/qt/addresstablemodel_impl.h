@@ -21,13 +21,14 @@ struct AddressTableEntry
     Type type;
     QString label;
     QString address;
+    QString description;
 
     private:
     AddressTableEntry() { type = None;}
-    AddressTableEntry(Type type, const CTxDestination& destination, const QString &label, const QString &address)
-    : type(type), label(label), address(address), destination(destination) {}
-    AddressTableEntry(Type type, const QString &label, const QString &address)
-    : type(type), label(label), address(address) {destination = CBitcoinAddress(address.toStdString()).Get();}
+    AddressTableEntry(Type type, const CTxDestination& destination, const QString &label, const QString &address, const QString &description = QString())
+    : type(type), label(label), address(address), description(description), destination(destination) {}
+    AddressTableEntry(Type type, const QString &label, const QString &address, const QString &description = QString())
+    : type(type), label(label), address(address), description(description) {destination = CBitcoinAddress(address.toStdString()).Get();}
     CTxDestination destination;
     friend class AddressTable_impl;
 };
@@ -37,12 +38,14 @@ class QAbstractAddressTableModel;
 class AddressTable_impl
 {
 public:
+
     CWallet *wallet;
-    QMap<QString,QString> donationAddressMap;
+    QList<AddressTableEntry> donationAddressTable;
     QList<AddressTableEntry> cachedAddressTable;
     QAbstractAddressTableModel *parent;
 
     AddressTable_impl(CWallet *wallet, QAbstractAddressTableModel *parent, bool includeExternalAccounts, bool includeMyAccounts);
+    void addDonationAddress(const QString &label, const QString &address, const QString &description = QString());
     void refreshAddressTable();
     void updateEntry(const QString &address, const QString &label, bool isMine, int status);
     int size();
