@@ -340,3 +340,4 @@ int AddressTableModel::lookupAddress(const QString &address) const
     {
         return lst.at(0).row();
     }
+}
