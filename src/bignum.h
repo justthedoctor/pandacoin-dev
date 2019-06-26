@@ -126,7 +126,7 @@ public:
     */
     static CBigNum  randBignum(const CBigNum& range) {
         CBigNum ret;
-        if(!BN_rand_range(&ret, &range)){
+        if(!BN_rand_range(&ret.get(), &range)){
             throw bignum_error("CBigNum:rand element : BN_rand_range failed");
         }
         return ret.get();
@@ -736,6 +736,8 @@ inline bool operator<(const CBigNum& a, const CBigNum& b)  { return (BN_cmp(a.cg
 inline bool operator>(const CBigNum& a, const CBigNum& b)  { return (BN_cmp(a.cget(), b.cget()) > 0); }
 
 inline std::ostream& operator<<(std::ostream &strm, const CBigNum &b) { return strm << b.ToString(10); }
+inline operator BIGNUM*() { return self; } 
+inline operator const BIGNUM*() const { return self; }
 
 typedef  CBigNum Bignum;
 
