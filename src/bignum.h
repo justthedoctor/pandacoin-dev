@@ -55,7 +55,7 @@ public:
 
 
 /** C++ wrapper for BIGNUM (OpenSSL bignum) */
-class CBigNum : public BIGNUM
+class CBigNum 
 {
     private:
     BIGNUM *self = nullptr;
