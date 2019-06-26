@@ -129,7 +129,7 @@ public:
         if(!BN_rand_range(&ret.get(), &range)){
             throw bignum_error("CBigNum:rand element : BN_rand_range failed");
         }
-        return ret.get();
+        return ret;
     }
 
     /** Generates a cryptographically secure random k-bit number
