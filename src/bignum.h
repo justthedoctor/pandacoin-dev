@@ -622,7 +622,7 @@ public:
     CBigNum& operator++()
     {
         // prefix operator
-        iif (!BN_add(self, self, BN_value_one()))
+        if (!BN_add(self, self, BN_value_one()))
             throw bignum_error("CBigNum::operator++ : BN_add failed");
         return *this;
     }
