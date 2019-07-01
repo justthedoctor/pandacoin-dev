@@ -296,7 +296,7 @@
               </font>
              </property>
              <property name="text">
-              <string notr="true">Web Address</string>
+              <string notr="true">Description</string>
              </property>
             </widget>
            </item>
