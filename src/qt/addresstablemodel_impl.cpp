@@ -61,8 +61,8 @@ void AddressTable_impl::refreshAddressTable()
         if(includeExternalAccounts)
         {
             //------ Donation Book Entries -------------
-            addDonationAddress("Chengdu Donations", "PN8QZ8UUpen5CpzY8m7nLPsu2qmxRTE6d3", "<div><a href='https://cryptodepot.org/pnd4pnd/'>https://cryptodepot.org/pnd4pnd/</a></div>");
-            addDonationAddress("The Ocean Cleanup Donations", "PSECCwBvFKCm9WtzDnWVfALgGSgbx2xHAf", "<div>The Ocean Cleanup. In parallel to developing technology to extract plastic from the ocean, we also investigate how we can reuse the material once it is back on shore.</div>");
+            addDonationAddress("Chengdu Donations", "PN8QZ8UUpen5CpzY8m7nLPsu2qmxRTE6d3", "<div>This is where pandas come from.<br> Literally. Chengdu is working hard to make<br> sure the panda babies keep sprouting like<br> bamboo shoots. It started in 1987 with 6 giant<br> pandas that were rescued from the wild. By 2008,</div>");
+            addDonationAddress("The Ocean Cleanup Donations", "PSECCwBvFKCm9WtzDnWVfALgGSgbx2xHAf", "<div>The Ocean Cleanup. In parallel to developing technology<br> to extract plastic from the ocean, we also <br>investigate how we can reuse the material <br> once it is back on shore.</div>");
             addDonationAddress("World Wildlife Fund Donations", "PG1HxBbH6fjJqx9taUrSqLx2Gmbg7DHc6x", "<div><a href='https://cryptodepot.org/pnd4pnd/'>https://cryptodepot.org/pnd4pnd/</a></div>");
             addDonationAddress("Pandacoin Bounty Fund Donations", "PE5VQcDzcafxH979buaoZ6RYBdgNhrD8Jk", "<div><a href='https://cryptodepot.org/pandacoin-funding-part-2/'>https://cryptodepot.org/pandacoin-funding-part-2/</a></div>");
             addDonationAddress("Pandas International Donations", "PAMpCh1n3c2Y7HNn7ERZh8JnzRvF34scv6", "<div><a href='https://cryptodepot.org/pnd4pnd/'>https://cryptodepot.org/pnd4pnd/</a></div>");
