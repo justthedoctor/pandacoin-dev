@@ -262,7 +262,7 @@
               </font>
              </property>
              <property name="text">
-              <string notr="true">Account address</string>
+              <string notr="true">Account Address</string>
              </property>
             </widget>
            </item>
