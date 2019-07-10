@@ -51,7 +51,7 @@ p̄hlitp̣hạṇṯh̒ nī̂ prakxbd̂wy sxft̒wær̒ thī̀ phạtʹhnā doy O
 <context>
     <name>AccountModel</name>
     <message>
-        <location filename="../accountmodel.cpp" line="+24"/>
+        <location filename="../accountmodel.cpp" line="+22"/>
         <source>Account Name</source>
         <translation>ชื่อบัญชี</translation>
     </message>
@@ -74,14 +74,18 @@ p̄hlitp̣hạṇṯh̒ nī̂ prakxbd̂wy sxft̒wær̒ thī̀ phạtʹhnā doy O
         <translation>กรอบ</translation>
     </message>
     <message>
-        <location line="+31"/>
+        <location line="+40"/>
         <source>Transactions</source>
         <translation>การทำธุรกรรม</translation>
     </message>
     <message>
-        <location line="+38"/>
         <source>View transactions for</source>
-        <translation>ดูธุรกรรมสำหรับ</translation>
+        <translation type="vanished">ดูธุรกรรมสำหรับ</translation>
+    </message>
+    <message>
+        <location line="+38"/>
+        <source>View Transactions for</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+36"/>
@@ -99,7 +103,7 @@ p̄hlitp̣hạṇṯh̒ nī̂ prakxbd̂wy sxft̒wær̒ thī̀ phạtʹhnā doy O
         <translation>ลงชื่อข้อความ</translation>
     </message>
     <message>
-        <location line="+132"/>
+        <location line="+141"/>
         <source>Last 30 Days</source>
         <translation>30 วันล่าสุด</translation>
     </message>
@@ -116,23 +120,27 @@ p̄hlitp̣hạṇṯh̒ nī̂ prakxbd̂wy sxft̒wær̒ thī̀ phạtʹhnā doy O
     <message>
         <location line="+23"/>
         <location line="+10"/>
-        <location line="+140"/>
+        <location line="+149"/>
         <source>PND</source>
         <translation>PND</translation>
     </message>
     <message>
-        <location line="-128"/>
+        <location line="-137"/>
         <source>Interest Gained</source>
         <translation>ดอกเบี้ยที่ได้รับ</translation>
     </message>
     <message>
-        <location line="+115"/>
+        <location line="+124"/>
+        <source>Total Interest</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>Total interest</source>
-        <translation>รวมดอกเบี้ย</translation>
+        <translation type="vanished">รวมดอกเบี้ย</translation>
     </message>
     <message>
         <location line="+32"/>
-        <location line="+25"/>
+        <location line="+43"/>
         <source>Create Account</source>
         <translation>สร้างบัญชี</translation>
     </message>
@@ -378,15 +386,24 @@ p̄hlitp̣hạṇṯh̒ nī̂ prakxbd̂wy sxft̒wær̒ thī̀ phạtʹhnā doy O
         <translation>... </translation>
     </message>
     <message>
-        <location line="+80"/>
+        <location line="+89"/>
         <location line="+245"/>
         <source>Edit</source>
         <translation>แก้ไข</translation>
     </message>
     <message>
-        <location line="+40"/>
+        <location line="+23"/>
+        <source>Account Name</source>
+        <translation type="unfinished">ชื่อบัญชี</translation>
+    </message>
+    <message>
+        <location line="+17"/>
+        <source>Account Address</source>
+        <translation type="unfinished">ที่อยู่บัญชี</translation>
+    </message>
+    <message>
         <source>Account address</source>
-        <translation>ที่อยู่บัญชี</translation>
+        <translation type="vanished">ที่อยู่บัญชี</translation>
     </message>
     <message>
         <location line="-191"/>
@@ -414,12 +431,11 @@ p̄hlitp̣hạṇṯh̒ nī̂ prakxbd̂wy sxft̒wær̒ thī̀ phạtʹhnā doy O
         <translation>เสร็จสิ้น</translation>
     </message>
     <message>
-        <location line="+16"/>
         <source>Account name</source>
-        <translation>ชื่อบัญชี</translation>
+        <translation type="vanished">ชื่อบัญชี</translation>
     </message>
     <message>
-        <location line="+57"/>
+        <location line="+82"/>
         <source>Delete</source>
         <translation>ลบ</translation>
     </message>
@@ -427,7 +443,7 @@ p̄hlitp̣hạṇṯh̒ nī̂ prakxbd̂wy sxft̒wær̒ thī̀ phạtʹhnā doy O
 <context>
     <name>AddressTableModel</name>
     <message>
-        <location filename="../addresstablemodel.cpp" line="+29"/>
+        <location filename="../addresstablemodel.cpp" line="+26"/>
         <source>Label</source>
         <translation>ป้ายกำกับ</translation>
     </message>
@@ -437,7 +453,7 @@ p̄hlitp̣hạṇṯh̒ nī̂ prakxbd̂wy sxft̒wær̒ thī̀ phạtʹhnā doy O
         <translation>ที่อยู่</translation>
     </message>
     <message>
-        <location line="+36"/>
+        <location line="+35"/>
         <source>(no label)</source>
         <translation>(ไม่มีป้ายกำกับ)</translation>
     </message>
@@ -451,22 +467,34 @@ p̄hlitp̣hạṇṯh̒ nī̂ prakxbd̂wy sxft̒wær̒ thī̀ phạtʹhnā doy O
     </message>
     <message>
         <location line="+21"/>
+        <source>Enter Password</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+14"/>
+        <source>New Password</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+14"/>
+        <source>Repeat New Password</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../askpassphrasedialog.cpp" line="+46"/>
         <source>Enter password</source>
         <translation>ใส่รหัสผ่าน</translation>
     </message>
     <message>
-        <location line="+14"/>
         <source>New password</source>
-        <translation>รหัสผ่านใหม่</translation>
+        <translation type="vanished">รหัสผ่านใหม่</translation>
     </message>
     <message>
-        <location line="+14"/>
         <source>Repeat new password</source>
-        <translation>ทำซ้ำรหัสผ่านใหม่</translation>
+        <translation type="vanished">ทำซ้ำรหัสผ่านใหม่</translation>
     </message>
     <message>
-        <location line="+39"/>
+        <location filename="../forms/askpassphrasedialog.ui" line="+39"/>
         <source>For earning interest only</source>
         <translation>สำหรับการหาดอกเบี้ยเท่านั้น</translation>
     </message>
@@ -660,22 +688,22 @@ p̄hlitp̣hạṇṯh̒ nī̂ prakxbd̂wy sxft̒wær̒ thī̀ phạtʹhnā doy O
 <context>
     <name>BitcoinGUI</name>
     <message>
-        <location filename="../bitcoingui.cpp" line="+309"/>
+        <location filename="../bitcoingui.cpp" line="+311"/>
         <source>Sign &amp;message...</source>
         <translation>ลงชื่อแ&amp;ข้อความ... </translation>
     </message>
     <message>
-        <location line="+506"/>
+        <location line="+518"/>
         <source>Synchronizing with network...</source>
         <translation>กำลังซิงค์กับเครือข่าย... </translation>
     </message>
     <message>
-        <location line="-570"/>
+        <location line="-582"/>
         <source>&amp;Overview</source>
         <translation>&amp;และภาพรวม</translation>
     </message>
     <message>
-        <location line="-156"/>
+        <location line="-158"/>
         <source>Digital PandaBank</source>
         <translation>Digital PandaBank</translation>
     </message>
@@ -695,7 +723,7 @@ p̄hlitp̣hạṇṯh̒ nī̂ prakxbd̂wy sxft̒wær̒ thī̀ phạtʹhnā doy O
         <translation>บริการรับ-ส่ง</translation>
     </message>
     <message>
-        <location line="+96"/>
+        <location line="+98"/>
         <source>Show general overview of wallet</source>
         <translation>แสดงภาพรวมทั่วไปของกระเป๋าสตางค์</translation>
     </message>
@@ -765,12 +793,12 @@ p̄hlitp̣hạṇṯh̒ nī̂ prakxbd̂wy sxft̒wær̒ thī̀ phạtʹhnā doy O
         <translation>&amp;ตัวเลือก... </translation>
     </message>
     <message>
-        <location line="+537"/>
+        <location line="+549"/>
         <source>Downloaded %1 of %2 blocks of transaction history (%3% done).</source>
         <translation>ดาวน์โหลด %1 จาก %2 บล็อกของประวัติการทำธุรกรรม (%3% เสร็จสิ้น)</translation>
     </message>
     <message>
-        <location line="-512"/>
+        <location line="-524"/>
         <source>&amp;Export...</source>
         <translation>&amp;ส่งออก... </translation>
     </message>
@@ -800,7 +828,7 @@ p̄hlitp̣hạṇṯh̒ nī̂ prakxbd̂wy sxft̒wær̒ thī̀ phạtʹhnā doy O
         <translation>&amp;แสดง / ซ่อน</translation>
     </message>
     <message>
-        <location line="+102"/>
+        <location line="+114"/>
         <location line="+9"/>
         <source>[testnet]</source>
         <translation>[testnet]</translation>
@@ -1096,7 +1124,7 @@ Pandacoin &apos;Lite&apos; ไม่ยอมให้คุณหาราย�
         <translation>กำลังหารายได้ &lt;br&gt; น้ำหนักของคุณคือ %1 &lt;br&gt; น้ำหนักเครือข่าย %2 &lt;br&gt; คาดว่าจะได้รับรางวัลใน %3</translation>
     </message>
     <message>
-        <location line="-1045"/>
+        <location line="-1057"/>
         <source>&amp;About Digital PandaBank</source>
         <translation>&amp;เกี่ยวกับ Digital PandaBank</translation>
     </message>
@@ -1179,7 +1207,7 @@ Pandacoin &apos;Lite&apos; ไม่ยอมให้คุณหาราย�
         <translation>เปิดใช้งานโหมดไคลเอ็นต์ &apos;Lite&apos;</translation>
     </message>
     <message>
-        <location line="+91"/>
+        <location line="+103"/>
         <location line="+71"/>
         <source>Digital PandaBank client</source>
         <translation>เกี่ยวกับ Digital PandaBank</translation>
@@ -1350,12 +1378,22 @@ Address: %4
         <translation>เอาท์พุทต่ำ:</translation>
     </message>
     <message>
+        <location line="+168"/>
+        <source>Tree Mode</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+16"/>
+        <source>List Mode</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../coincontroldialog.cpp" line="+555"/>
         <source>no</source>
         <translation>ไม่</translation>
     </message>
     <message>
-        <location filename="../forms/coincontroldialog.ui" line="+51"/>
+        <location filename="../forms/coincontroldialog.ui" line="-133"/>
         <source>After Fee:</source>
         <translation>หลังจากค่าธรรมเนียม:</translation>
     </message>
@@ -1370,17 +1408,15 @@ Address: %4
         <translation>เลือกบัญชี</translation>
     </message>
     <message>
-        <location line="+13"/>
         <source>Tree mode</source>
-        <translation>โหมดต้นไม้</translation>
+        <translation type="vanished">โหมดต้นไม้</translation>
     </message>
     <message>
-        <location line="+16"/>
         <source>List mode</source>
-        <translation>โหมดรายการ</translation>
+        <translation type="vanished">โหมดรายการ</translation>
     </message>
     <message>
-        <location line="+45"/>
+        <location line="+74"/>
         <source>Amount</source>
         <translation>จำนวน</translation>
     </message>
@@ -1596,13 +1632,21 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+19"/>
-        <source>Account name</source>
-        <translation>ชื่อบัญชี</translation>
+        <source>Account Name</source>
+        <translation type="unfinished">ชื่อบัญชี</translation>
     </message>
     <message>
         <location line="+15"/>
+        <source>Account Address</source>
+        <translation type="unfinished">ที่อยู่บัญชี</translation>
+    </message>
+    <message>
+        <source>Account name</source>
+        <translation type="vanished">ชื่อบัญชี</translation>
+    </message>
+    <message>
         <source>Account address</source>
-        <translation>ที่อยู่บัญชี</translation>
+        <translation type="vanished">ที่อยู่บัญชี</translation>
     </message>
     <message>
         <location line="+27"/>
@@ -1634,6 +1678,74 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
         <location line="+4"/>
         <source>Error creating Digital PandaBank account.</source>
         <translation>เกิดข้อผิดพลาดในการสร้างบัญชี Digital PandaBank</translation>
+    </message>
+</context>
+<context>
+    <name>DonationBookPage</name>
+    <message>
+        <location filename="../forms/donationbook.ui" line="+14"/>
+        <source>Frame</source>
+        <translation type="unfinished">กรอบ</translation>
+    </message>
+    <message>
+        <location line="+34"/>
+        <source>Donation Book</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+26"/>
+        <source>Copy the currently selected address to the system clipboard</source>
+        <translation type="unfinished">คัดลอกที่อยู่ที่ถูกเลือกไปยัง คลิปบอร์ดของระบบ</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>&amp;Copy Address</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+11"/>
+        <source>Show &amp;QR Code</source>
+        <translation type="unfinished">แสดง &amp;QR Code</translation>
+    </message>
+    <message>
+        <location line="+11"/>
+        <source>Verify a message to ensure it was signed with a specified Pandacoin address</source>
+        <translation type="unfinished">ทวนสอบข้อความเพื่อให้มั่นใจว่าได้ลงชื่อด้วยที่อยู่ Pandacoin ที่ระบุ</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>&amp;Verify Message</source>
+        <translation type="unfinished">&amp;ทวนสอบข้อความ</translation>
+    </message>
+    <message>
+        <location line="+25"/>
+        <source>Search address book</source>
+        <translation type="unfinished">ค้นหาสมุดที่อยู่</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>...</source>
+        <translation type="unfinished">... </translation>
+    </message>
+    <message>
+        <location line="+223"/>
+        <source>Send Pandacoins</source>
+        <translation type="unfinished">ส่ง Pandacoins</translation>
+    </message>
+    <message>
+        <location line="+40"/>
+        <source>From</source>
+        <translation type="unfinished">จาก</translation>
+    </message>
+    <message>
+        <location line="+36"/>
+        <source>Amount</source>
+        <translation type="unfinished">จำนวน</translation>
+    </message>
+    <message>
+        <location line="+15"/>
+        <source>Next</source>
+        <translation type="unfinished">ต่อไป</translation>
     </message>
 </context>
 <context>
@@ -1789,11 +1901,17 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
 <context>
     <name>MenuBar</name>
     <message>
+        <location filename="../forms/menubar.ui" line="+64"/>
         <source>Contacts</source>
-        <translation type="vanished">โหมด</translation>
+        <translation>โหมด</translation>
     </message>
     <message>
-        <location filename="../forms/menubar.ui" line="+81"/>
+        <location line="+26"/>
+        <source>Donate</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+26"/>
         <source>File</source>
         <translation>ไฟล์</translation>
     </message>
@@ -1826,12 +1944,11 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
         <translation>ค่าธรรมเนียมการทำรายการที่เลือกต่อหนึ่ง kB ซึ่งจะช่วยให้แน่ใจได้ว่าธุรกรรมของคุณได้รับการดำเนินการอย่างรวดเร็ว ธุรกรรมส่วนใหญ่เป็น 1 kB ขอแนะนำค่าธรรมเนียม 0.01</translation>
     </message>
     <message>
-        <location line="+21"/>
         <source>Pay transaction &amp;fee</source>
-        <translation> &amp;ชำระค่าธรรมเนียม</translation>
+        <translation type="vanished"> &amp;ชำระค่าธรรมเนียม</translation>
     </message>
     <message>
-        <location line="+31"/>
+        <location line="+52"/>
         <source>Reserved amount does not participate in staking and is therefore spendable at any time.</source>
         <translation>จำนวนเงินที่สำรองไว้จะไม่มีส่วนในการหารายได้ดอกเบี้ย ดังนั้นจึงนำไปใช้จ่ายได้</translation>
     </message>
@@ -1856,9 +1973,18 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
         <translation>ปลดฐานข้อมูลบล็อกและที่อยู่ออกก่อนการปิดระบบ ซึ่งหมายความว่าจะสามารถนำไปเก็บในไดเรคทอรี่อื่นได้ แต่การปิดระบบจะช้าลง ส่วนกระเป๋าสตางค์จะถูกปลดออกเสมอ</translation>
     </message>
     <message>
-        <location line="+3"/>
         <source>&amp;Detach databases at shutdown</source>
-        <translation>&amp;และแยกฐานข้อมูลออกเมื่อปิดระบบ</translation>
+        <translation type="vanished">&amp;และแยกฐานข้อมูลออกเมื่อปิดระบบ</translation>
+    </message>
+    <message>
+        <location line="-93"/>
+        <source>Pay Transaction &amp;Fee</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+96"/>
+        <source>&amp;Detach Databases at shutdown</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+21"/>
@@ -1947,11 +2073,20 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+8"/>
-        <source>User Interface &amp;language:</source>
-        <translation>หน้าจอผู้ใช้  &amp;ภาษา:</translation>
+        <source>User Interface &amp;Language:</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+13"/>
+        <location line="+49"/>
+        <source>&amp;Display Addresses in transaction list</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>User Interface &amp;language:</source>
+        <translation type="vanished">หน้าจอผู้ใช้  &amp;ภาษา:</translation>
+    </message>
+    <message>
+        <location line="-36"/>
         <source>The user interface language can be set here. This setting will take effect after restarting Pandacoin.</source>
         <translation>ภาษาที่ใช้ติดต่อกับผู้ใช้สามารถกำหนดได้ที่นี่ การกำหนดค่านี้จะมีผลกหลังจากเริ่ม Digital PandaBank ใหม่</translation>
     </message>
@@ -1971,12 +2106,11 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
         <translation>ว่าจะแสดงที่อยู่ Pandacoin ในรายการธุรกรรมหรือไม่</translation>
     </message>
     <message>
-        <location line="+3"/>
         <source>&amp;Display addresses in transaction list</source>
-        <translation>&amp;แสดงที่อยู่ในรายการธุรกรรม</translation>
+        <translation type="vanished">&amp;แสดงที่อยู่ในรายการธุรกรรม</translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="+10"/>
         <source>Whether to show coin control features or not.</source>
         <translation>ว่าจะแสดงคุณลักษณะการควบคุมเหรียญหรือไม่</translation>
     </message>
@@ -2348,12 +2482,11 @@ Should you encounter this error repeatedly please seek assistance.</source>
 <context>
     <name>RPCConsole</name>
     <message>
-        <location filename="../forms/rpcconsole.ui" line="+46"/>
         <source>Client name</source>
-        <translation>ชื่อลูกค้า</translation>
+        <translation type="vanished">ชื่อลูกค้า</translation>
     </message>
     <message>
-        <location line="+10"/>
+        <location filename="../forms/rpcconsole.ui" line="+56"/>
         <location line="+23"/>
         <location line="+26"/>
         <location line="+23"/>
@@ -2367,37 +2500,33 @@ Should you encounter this error repeatedly please seek assistance.</source>
         <translation>N/A</translation>
     </message>
     <message>
-        <location line="-217"/>
         <source>Client version</source>
-        <translation>เวอร์ชันไคลเอ็นต์</translation>
+        <translation type="vanished">เวอร์ชันไคลเอ็นต์</translation>
     </message>
     <message>
-        <location line="-45"/>
+        <location line="-262"/>
         <source>&amp;Information</source>
         <translation>&amp;ข้อมูล</translation>
     </message>
     <message>
-        <location line="+68"/>
         <source>Using OpenSSL version</source>
-        <translation>ใช้ OpenSSL เวอร์ชัน</translation>
+        <translation type="vanished">ใช้ OpenSSL เวอร์ชัน</translation>
     </message>
     <message>
-        <location line="+49"/>
         <source>Startup time</source>
-        <translation>เวลาเริ่มต้น</translation>
+        <translation type="vanished">เวลาเริ่มต้น</translation>
     </message>
     <message>
-        <location line="+29"/>
+        <location line="+146"/>
         <source>Network</source>
         <translation>เครือข่าย</translation>
     </message>
     <message>
-        <location line="+7"/>
         <source>Number of connections</source>
-        <translation>จำนวนการเชื่อมต่อ</translation>
+        <translation type="vanished">จำนวนการเชื่อมต่อ</translation>
     </message>
     <message>
-        <location line="+23"/>
+        <location line="+30"/>
         <source>On testnet</source>
         <translation>บน testnet</translation>
     </message>
@@ -2406,32 +2535,28 @@ Should you encounter this error repeatedly please seek assistance.</source>
         <translation type="vanished">บล็อกเชน</translation>
     </message>
     <message>
-        <location line="+30"/>
         <source>Current number of blocks</source>
-        <translation>จำนวนบล็อกปัจจุบัน</translation>
+        <translation type="vanished">จำนวนบล็อกปัจจุบัน</translation>
     </message>
     <message>
-        <location line="+23"/>
         <source>Estimated total blocks</source>
-        <translation>บล็อกทั้งหมดโดยประมาณ</translation>
+        <translation type="vanished">บล็อกทั้งหมดโดยประมาณ</translation>
     </message>
     <message>
-        <location line="+23"/>
         <source>Last block time</source>
-        <translation>เวลาของบล็อกครั้งล่าสุด</translation>
+        <translation type="vanished">เวลาของบล็อกครั้งล่าสุด</translation>
     </message>
     <message>
-        <location line="+52"/>
+        <location line="+128"/>
         <source>&amp;Open</source>
         <translation>&amp;เปิด</translation>
     </message>
     <message>
-        <location line="+16"/>
         <source>Command-line options</source>
-        <translation>ตัวเลือกบรรทัดคำสั่ง</translation>
+        <translation type="vanished">ตัวเลือกบรรทัดคำสั่ง</translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="+23"/>
         <source>Show the Pandacoin-Qt help message to get a list with possible Pandacoin command-line options.</source>
         <translation>แสดงข้อความช่วยเหลือ Pandacoin-Qt เพื่อดูรายการที่มีตัวเลือกบรรทัดคำสั่ง Pandacoin ที่เป็นไปได้</translation>
     </message>
@@ -2446,12 +2571,11 @@ Should you encounter this error repeatedly please seek assistance.</source>
         <translation>&amp;คอนโซล</translation>
     </message>
     <message>
-        <location line="-260"/>
         <source>Build date</source>
-        <translation>สร้างวันที่</translation>
+        <translation type="vanished">สร้างวันที่</translation>
     </message>
     <message>
-        <location line="-104"/>
+        <location line="-364"/>
         <source>Pandacoin - Debug window</source>
         <translation>Pandacoin - หน้าต่างดีบัก</translation>
     </message>
@@ -2461,12 +2585,57 @@ Should you encounter this error repeatedly please seek assistance.</source>
         <translation>Pandacoin Core</translation>
     </message>
     <message>
-        <location line="+184"/>
+        <location line="+7"/>
+        <source>Client Name</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+23"/>
+        <source>Client Version</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+23"/>
+        <source>Using OpenSSL Version</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+26"/>
+        <source>Build Date</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+23"/>
+        <source>Startup Time</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+36"/>
+        <source>Number of Connections</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+46"/>
         <source>Block chain</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+95"/>
+        <location line="+7"/>
+        <source>Current Number of Blocks</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+23"/>
+        <source>Estimated Total Blocks</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+23"/>
+        <source>Last Block Time</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+42"/>
         <source>Debug log file</source>
         <translation>ไฟล์บันทึกข้อผิดพลาด</translation>
     </message>
@@ -2476,7 +2645,12 @@ Should you encounter this error repeatedly please seek assistance.</source>
         <translation>เปิดไฟล์บันทึกการแก้ปัญหา Pandacoin จากไดเร็กทอรีข้อมูลปัจจุบัน อาจใช้เวลาสักครู่สำหรับไฟล์บันทึกขนาดใหญ่</translation>
     </message>
     <message>
-        <location line="+102"/>
+        <location line="+19"/>
+        <source>Command-line Options</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+83"/>
         <source>Clear console</source>
         <translation>ล้างคอนโซล</translation>
     </message>
@@ -2974,7 +3148,7 @@ Please select the &quot;from&quot; address at the top of this page.</source>
 <context>
     <name>SingleColumnAccountModel</name>
     <message>
-        <location filename="../accountmodel.cpp" line="+241"/>
+        <location filename="../accountmodel.cpp" line="+245"/>
         <location line="+4"/>
         <source>All Accounts</source>
         <translation>บัญชีทั้งหมด</translation>
@@ -3506,14 +3680,19 @@ Please select the &quot;from&quot; address at the top of this page.</source>
         <translation>กรอบ</translation>
     </message>
     <message>
-        <location line="+22"/>
+        <location line="+31"/>
         <source>Transfers</source>
         <translation>บริการรับ-ส่ง</translation>
     </message>
     <message>
-        <location line="+16"/>
+        <location line="+25"/>
         <source>Address Book</source>
         <translation>สมุดที่อยู่</translation>
+    </message>
+    <message>
+        <location line="+25"/>
+        <source>Donation Book</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
