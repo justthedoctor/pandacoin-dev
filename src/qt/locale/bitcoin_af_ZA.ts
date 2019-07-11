@@ -1876,7 +1876,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message>
         <location line="+26"/>
         <source>Donate</source>
-        <translation type="unfinished"></translation>
+        <translation>skenk</translation>
     </message>
     <message>
         <location line="+26"/>
@@ -3699,12 +3699,12 @@ Please select the &quot;from&quot; address at the top of this page.</source>
     <message>
         <location line="+25"/>
         <source>Address Book</source>
-        <translation type="unfinished"></translation>
+        <translation>Adres boek</translation>
     </message>
     <message>
         <location line="+25"/>
         <source>Donation Book</source>
-        <translation type="unfinished"></translation>
+        <translation>Donasieboek</translation>
     </message>
 </context>
 <context>
