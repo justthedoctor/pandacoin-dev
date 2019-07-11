@@ -3692,7 +3692,7 @@ Please select the &quot;from&quot; address at the top of this page.</source>
     <message>
         <location line="+25"/>
         <source>Donation Book</source>
-        <translation type="unfinished">หนังสือบริจาค</translation>
+        <translation>หนังสือบริจาค</translation>
     </message>
 </context>
 <context>

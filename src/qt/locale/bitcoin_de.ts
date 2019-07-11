@@ -2005,13 +2005,12 @@ Diese Beschriftung wird rot, wenn die Priorität kleiner als &quot;mittel&quot; 
     <message>
         <location filename="../forms/menubar.ui" line="+64"/>
         <source>Contacts</source>
-        <translatorcomment>Επαφές</translatorcomment>
-        <translation>Επαφές</translation>
+        <translation>Kontakte</translation>
     </message>
     <message>
         <location line="+26"/>
         <source>Donate</source>
-        <translation type="unfinished"></translation>
+        <translation>Spenden</translation>
     </message>
     <message>
         <location line="+26"/>
@@ -4079,7 +4078,7 @@ Please select the &quot;from&quot; address at the top of this page.</source>
     <message>
         <location line="+25"/>
         <source>Donation Book</source>
-        <translation type="unfinished"></translation>
+        <translation>Spendenbuch</translation>
     </message>
 </context>
 <context>
