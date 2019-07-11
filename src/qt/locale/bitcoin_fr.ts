@@ -87,7 +87,7 @@ Ce produit comprend des logiciels développés par le projet OpenSSL afin d&apos
     <message>
         <location line="+38"/>
         <source>View Transactions for</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location line="+36"/>
@@ -134,7 +134,7 @@ Ce produit comprend des logiciels développés par le projet OpenSSL afin d&apos
     <message>
         <location line="+124"/>
         <source>Total Interest</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <source>Total interest</source>
@@ -155,7 +155,7 @@ Ce produit comprend des logiciels développés par le projet OpenSSL afin d&apos
         <location line="+28"/>
         <location line="+4"/>
         <source>transactions found</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <source>transaction found</source>
@@ -395,12 +395,12 @@ Ce produit comprend des logiciels développés par le projet OpenSSL afin d&apos
     <message>
         <location line="+357"/>
         <source>Account Name</source>
-        <translation type="unfinished">Nom du compte</translation>
+        <translation>Nom du compte</translation>
     </message>
     <message>
         <location line="+17"/>
         <source>Account Address</source>
-        <translation type="unfinished">Adresse du compte</translation>
+        <translation>Adresse du compte</translation>
     </message>
     <message>
         <source>label</source>
@@ -479,17 +479,17 @@ Ce produit comprend des logiciels développés par le projet OpenSSL afin d&apos
     <message>
         <location line="+21"/>
         <source>Enter Password</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location line="+14"/>
         <source>New Password</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location line="+14"/>
         <source>Repeat New Password</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../askpassphrasedialog.cpp" line="+46"/>
@@ -859,7 +859,7 @@ Ce produit comprend des logiciels développés par le projet OpenSSL afin d&apos
         <location line="-143"/>
         <location line="+93"/>
         <source>Downloaded %1 of %2 blocks (%3% done).</source>
-        <translation type="unfinished">Progression : %3% (%1 blocs scannés, sur %2 au total).</translation>
+        <translation>Progression : %3% (%1 blocs scannés, sur %2 au total).</translation>
     </message>
     <message>
         <location line="-79"/>
@@ -874,7 +874,7 @@ Ce produit comprend des logiciels développés par le projet OpenSSL afin d&apos
     <message>
         <location line="+17"/>
         <source>Scanned %1 of %2 blocks (%3% done).</source>
-        <translation type="unfinished">Progression :  (%1) %2 %3%</translation>
+        <translation>Progression :  (%1) %2 %3%</translation>
     </message>
     <message>
         <location line="+14"/>
@@ -894,7 +894,7 @@ Ce produit comprend des logiciels développés par le projet OpenSSL afin d&apos
     <message>
         <location line="+16"/>
         <source>Verified %1 of %2 blocks (%3% done).</source>
-        <translation type="unfinished">Progression :   (%1) %2 %3%</translation>
+        <translation>Progression :   (%1) %2 %3%</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -1022,7 +1022,7 @@ Ce produit comprend des logiciels développés par le projet OpenSSL afin d&apos
     <message>
         <location line="+549"/>
         <source>Downloaded %1 of %2 blocks of transaction history (%3% done).</source>
-        <translation type="unfinished">Progression :   (%1) %2 %3%</translation>
+        <translation>Progression :   (%1) %2 %3%</translation>
     </message>
     <message>
         <location line="-524"/>
@@ -1334,7 +1334,7 @@ Ce produit comprend des logiciels développés par le projet OpenSSL afin d&apos
     <message>
         <location line="+134"/>
         <source>Downloaded %1 of %2 checkpoints (%3% done).</source>
-        <translation type="unfinished">Progression :   (%1) %2 %3%</translation>
+        <translation>Progression :   (%1) %2 %3%</translation>
     </message>
     <message numerus="yes">
         <source>%n minute(s) ago</source>
@@ -1399,10 +1399,10 @@ Amount: %2
 Type: %3
 Address: %4
 </source>
-        <translation>Date : %1
-Montant : %2
-Type : %3
-Adresse : %4
+        <translation>Date&#xa0;: %1
+Montant&#xa0;: %2
+Type&#xa0;: %3
+Adresse&#xa0;: %4
 </translation>
     </message>
     <message>
@@ -1609,7 +1609,7 @@ Voulez-vous vraiment activer le mode &quot;léger&quot; ?</translation>
     <message>
         <location line="+48"/>
         <source>Amount:</source>
-        <translation>Montant :</translation>
+        <translation>Montant&#xa0;:</translation>
     </message>
     <message>
         <location line="+32"/>
@@ -1629,12 +1629,12 @@ Voulez-vous vraiment activer le mode &quot;léger&quot; ?</translation>
     <message>
         <location line="+168"/>
         <source>Tree Mode</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location line="+16"/>
         <source>List Mode</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../coincontroldialog.cpp" line="+555"/>
@@ -1885,12 +1885,12 @@ Cela implique que des frais à hauteur d&apos;au moins %2 seront nécessaires.</
     <message>
         <location line="+19"/>
         <source>Account Name</source>
-        <translation type="unfinished">Nom du compte</translation>
+        <translation>Nom du compte</translation>
     </message>
     <message>
         <location line="+15"/>
         <source>Account Address</source>
-        <translation type="unfinished">Adresse du compte</translation>
+        <translation>Adresse du compte</translation>
     </message>
     <message>
         <source>Account name</source>
@@ -1937,67 +1937,67 @@ Cela implique que des frais à hauteur d&apos;au moins %2 seront nécessaires.</
     <message>
         <location filename="../forms/donationbook.ui" line="+14"/>
         <source>Frame</source>
-        <translation type="unfinished">Cadre</translation>
+        <translation>Cadre</translation>
     </message>
     <message>
         <location line="+34"/>
         <source>Donation Book</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location line="+26"/>
         <source>Copy the currently selected address to the system clipboard</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location line="+3"/>
         <source>&amp;Copy Address</source>
-        <translation type="unfinished">&amp;Copier l&apos;adresse</translation>
+        <translation>&amp;Copier l&apos;adresse</translation>
     </message>
     <message>
         <location line="+11"/>
         <source>Show &amp;QR Code</source>
-        <translation type="unfinished">&amp;QR Code</translation>
+        <translation>&amp;QR Code</translation>
     </message>
     <message>
         <location line="+11"/>
         <source>Verify a message to ensure it was signed with a specified Pandacoin address</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location line="+3"/>
         <source>&amp;Verify Message</source>
-        <translation type="unfinished">&amp;Vérifier un message</translation>
+        <translation>&amp;Vérifier un message</translation>
     </message>
     <message>
         <location line="+25"/>
         <source>Search address book</source>
-        <translation type="unfinished">Chercher dans le répertoire</translation>
+        <translation>Chercher dans le répertoire</translation>
     </message>
     <message>
         <location line="+7"/>
         <source>...</source>
-        <translation type="unfinished">...</translation>
+        <translation>...</translation>
     </message>
     <message>
         <location line="+223"/>
         <source>Send Pandacoins</source>
-        <translation type="unfinished">Envoyer des Pandacoins</translation>
+        <translation>Envoyer des Pandacoins</translation>
     </message>
     <message>
         <location line="+40"/>
         <source>From</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location line="+36"/>
         <source>Amount</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location line="+15"/>
         <source>Next</source>
-        <translation type="unfinished">Suivant</translation>
+        <translation>Suivant</translation>
     </message>
 </context>
 <context>
@@ -2099,7 +2099,7 @@ Cela implique que des frais à hauteur d&apos;au moins %2 seront nécessaires.</
     <message>
         <location line="+1"/>
         <source>Set language, for example &quot;de_DE&quot; (default: system locale)</source>
-        <translation>Définir la langue, par exemple « fr_FR » (par défaut : la langue du système)</translation>
+        <translation>Définir la langue, par exemple «&#xa0;fr_FR&#xa0;» (par défaut&#xa0;: la langue du système)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2160,7 +2160,7 @@ Cela implique que des frais à hauteur d&apos;au moins %2 seront nécessaires.</
     <message>
         <location line="+26"/>
         <source>Donate</source>
-        <translation type="unfinished"></translation>
+        <translation>Faire un don</translation>
     </message>
     <message>
         <location line="+26"/>
@@ -2235,12 +2235,12 @@ Cela implique que des frais à hauteur d&apos;au moins %2 seront nécessaires.</
     <message>
         <location line="-93"/>
         <source>Pay Transaction &amp;Fee</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location line="+96"/>
         <source>&amp;Detach Databases at shutdown</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location line="+21"/>
@@ -2330,16 +2330,16 @@ Cela implique que des frais à hauteur d&apos;au moins %2 seront nécessaires.</
     <message>
         <location line="+8"/>
         <source>User Interface &amp;Language:</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location line="+49"/>
         <source>&amp;Display Addresses in transaction list</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <source>User Interface &amp;language:</source>
-        <translation type="vanished">&amp;Langue de l&apos;interface utilisateur :</translation>
+        <translation type="vanished">&amp;Langue de l&apos;interface utilisateur&#xa0;:</translation>
     </message>
     <message>
         <location line="-36"/>
@@ -2890,47 +2890,47 @@ Si ce problème persiste, nous vous prions de contacter l&apos;assistance techni
     <message>
         <location line="+7"/>
         <source>Client Name</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location line="+23"/>
         <source>Client Version</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location line="+23"/>
         <source>Using OpenSSL Version</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location line="+26"/>
         <source>Build Date</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location line="+23"/>
         <source>Startup Time</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location line="+36"/>
         <source>Number of Connections</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location line="+53"/>
         <source>Current Number of Blocks</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location line="+23"/>
         <source>Estimated Total Blocks</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location line="+23"/>
         <source>Last Block Time</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location line="+42"/>
@@ -2945,7 +2945,7 @@ Si ce problème persiste, nous vous prions de contacter l&apos;assistance techni
     <message>
         <location line="+19"/>
         <source>Command-line Options</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location line="+83"/>
@@ -3227,7 +3227,7 @@ Si ce problème persiste, nous vous prions de contacter l&apos;assistance techni
         <location line="+32"/>
         <source>0.00 PND</source>
         <translatorcomment>Why was this &quot;{0.00 ?}&quot;? Is it formatting?</translatorcomment>
-        <translation type="unfinished">0.00 PND</translation>
+        <translation>0.00 PND</translation>
     </message>
     <message>
         <location line="-191"/>
@@ -3313,7 +3313,7 @@ Si ce problème persiste, nous vous prions de contacter l&apos;assistance techni
     </message>
     <message>
         <source>&amp;Label:</source>
-        <translation type="obsolete">&amp;Étiquette :</translation>
+        <translation type="obsolete">&amp;Étiquette&#xa0;:</translation>
     </message>
     <message>
         <source>The address to send the payment to  (e.g. PBZ8YVV3XT3WWWd2a1jo4N9WePiwKB3mJE)</source>
@@ -3607,7 +3607,7 @@ Veuillez sélectionner une adresse source à partir du haut de cette page.</tran
     <message>
         <location line="-2"/>
         <source>Click &quot;Sign Message&quot; to generate signature</source>
-        <translation>Cliquer sur « Signer le message » pour générer la signature</translation>
+        <translation>Cliquer sur «&#xa0;Signer le message&#xa0;» pour générer la signature</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -4312,7 +4312,7 @@ Veuillez sélectionner une adresse source à partir du haut de cette page.</tran
     <message>
         <location line="+25"/>
         <source>Donation Book</source>
-        <translation type="unfinished"></translation>
+        <translation>Livre de donation</translation>
     </message>
 </context>
 <context>
@@ -4378,12 +4378,12 @@ Veuillez sélectionner une adresse source à partir du haut de cette page.</tran
     <message>
         <location line="+2"/>
         <source>Set database cache size in megabytes (default: 25)</source>
-        <translation>Définir la taille du cache de base de données en mégaoctets (par défaut : 25)</translation>
+        <translation>Définir la taille du cache de base de données en mégaoctets (par défaut&#xa0;: 25)</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Set database disk log size in megabytes (default: 100)</source>
-        <translation>Définir la taille du journal de base de données en mégaoctets (par défaut : 100)</translation>
+        <translation>Définir la taille du journal de base de données en mégaoctets (par défaut&#xa0;: 100)</translation>
     </message>
     <message>
         <location line="+6"/>
@@ -4393,7 +4393,7 @@ Veuillez sélectionner une adresse source à partir du haut de cette page.</tran
     <message>
         <location line="+1"/>
         <source>Maintain at most &lt;n&gt; connections to peers (default: 125)</source>
-        <translation>Garder au plus &lt;n&gt; connexions avec les pairs (par défaut : 125)</translation>
+        <translation>Garder au plus &lt;n&gt; connexions avec les pairs (par défaut&#xa0;: 125)</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -4418,12 +4418,12 @@ Veuillez sélectionner une adresse source à partir du haut de cette page.</tran
     <message>
         <location line="+5"/>
         <source>Threshold for disconnecting misbehaving peers (default: 100)</source>
-        <translation>Seuil de déconnexion des pairs de mauvaise qualité (par défaut : 100)</translation>
+        <translation>Seuil de déconnexion des pairs de mauvaise qualité (par défaut&#xa0;: 100)</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Number of seconds to keep misbehaving peers from reconnecting (default: 86400)</source>
-        <translation>Délai en secondes de refus de reconnexion aux pairs de mauvaise qualité (par défaut : 86400)</translation>
+        <translation>Délai en secondes de refus de reconnexion aux pairs de mauvaise qualité (par défaut&#xa0;: 86400)</translation>
     </message>
     <message>
         <location line="-44"/>
@@ -4745,7 +4745,7 @@ par exemple: alertnotify=echo %%s | mail -s &quot;Alerte Pandacoin&quot; admin@f
     <message>
         <location line="+1"/>
         <source>Send commands to node running on &lt;ip&gt; (default: 127.0.0.1)</source>
-        <translation>Envoyer des commandes au nœud fonctionnant sur &lt;ip&gt; (par défaut : 127.0.0.1)</translation>
+        <translation>Envoyer des commandes au nœud fonctionnant sur &lt;ip&gt; (par défaut&#xa0;: 127.0.0.1)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -4780,7 +4780,7 @@ par exemple: alertnotify=echo %%s | mail -s &quot;Alerte Pandacoin&quot; admin@f
     <message>
         <location line="+1"/>
         <source>Set key pool size to &lt;n&gt; (default: 100)</source>
-        <translation>Régler la taille de la réserve de clefs sur &lt;n&gt; (par défaut : 100)</translation>
+        <translation>Régler la taille de la réserve de clefs sur &lt;n&gt; (par défaut&#xa0;: 100)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -4810,12 +4810,12 @@ par exemple: alertnotify=echo %%s | mail -s &quot;Alerte Pandacoin&quot; admin@f
     <message>
         <location line="+1"/>
         <source>Server certificate file (default: server.cert)</source>
-        <translation>Fichier de certificat serveur (par défaut : server.cert)</translation>
+        <translation>Fichier de certificat serveur (par défaut&#xa0;: server.cert)</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Server private key (default: server.pem)</source>
-        <translation>Clef privée du serveur (par défaut : server.pem)</translation>
+        <translation>Clef privée du serveur (par défaut&#xa0;: server.pem)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -4900,32 +4900,32 @@ par exemple: alertnotify=echo %%s | mail -s &quot;Alerte Pandacoin&quot; admin@f
     <message>
         <location line="-16"/>
         <source>Invalid -proxy address: &apos;%s&apos;</source>
-        <translation>Adresse -proxy invalide : « %s »</translation>
+        <translation>Adresse -proxy invalide&#xa0;: «&#xa0;%s&#xa0;»</translation>
     </message>
     <message>
         <location line="-1"/>
         <source>Unknown network specified in -onlynet: &apos;%s&apos;</source>
-        <translation>Réseau inconnu spécifié sur -onlynet : « %s »</translation>
+        <translation>Réseau inconnu spécifié sur -onlynet&#xa0;: «&#xa0;%s&#xa0;»</translation>
     </message>
     <message>
         <location line="-1"/>
         <source>Unknown -socks proxy version requested: %i</source>
-        <translation>Version inconnue de serveur mandataire -socks demandée : %i</translation>
+        <translation>Version inconnue de serveur mandataire -socks demandée&#xa0;: %i</translation>
     </message>
     <message>
         <location line="+4"/>
         <source>Cannot resolve -bind address: &apos;%s&apos;</source>
-        <translation>Impossible de résoudre l&apos;adresse -bind : « %s »</translation>
+        <translation>Impossible de résoudre l&apos;adresse -bind&#xa0;: «&#xa0;%s&#xa0;»</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>Cannot resolve -externalip address: &apos;%s&apos;</source>
-        <translation>Impossible de résoudre l&apos;adresse -externalip : « %s »</translation>
+        <translation>Impossible de résoudre l&apos;adresse -externalip&#xa0;: «&#xa0;%s&#xa0;»</translation>
     </message>
     <message>
         <location line="-24"/>
         <source>Invalid amount for -paytxfee=&lt;amount&gt;: &apos;%s&apos;</source>
-        <translation>Montant invalide pour -paytxfee=&lt;montant&gt; : « %s »</translation>
+        <translation>Montant invalide pour -paytxfee=&lt;montant&gt;&#xa0;: «&#xa0;%s&#xa0;»</translation>
     </message>
     <message>
         <location line="+44"/>
@@ -5017,7 +5017,7 @@ par exemple: alertnotify=echo %%s | mail -s &quot;Alerte Pandacoin&quot; admin@f
         <source>You must set rpcpassword=&lt;password&gt; in the configuration file:
 %s
 If the file does not exist, create it with owner-readable-only file permissions.</source>
-        <translation>Vous devez ajouter la ligne rpcpassword=&lt;mot-de-passe&gt; au fichier de configuration :
+        <translation>Vous devez ajouter la ligne rpcpassword=&lt;mot-de-passe&gt; au fichier de configuration&#xa0;:
 %s
 Si le fichier n&apos;existe pas, créez-le avec les droits de lecture seule accordés au propriétaire.</translation>
     </message>
