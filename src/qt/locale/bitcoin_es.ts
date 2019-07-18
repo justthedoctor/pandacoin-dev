@@ -2162,7 +2162,7 @@ Esto significa que se requiere una cuota de al menos %2.</translation>
     <message>
         <location line="+26"/>
         <source>Donate</source>
-        <translation type="unfinished"></translation>
+        <translation>Donar</translation>
     </message>
     <message>
         <location line="+26"/>
@@ -4307,7 +4307,7 @@ Seleccione la dirección &quot;de&quot; en la parte superior de esta página.</t
     <message>
         <location line="+25"/>
         <source>Donation Book</source>
-        <translation type="unfinished"></translation>
+        <translation>Libro de donaciones</translation>
     </message>
 </context>
 <context>
