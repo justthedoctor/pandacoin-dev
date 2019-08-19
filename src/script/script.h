@@ -199,7 +199,8 @@ enum opcodetype
     
     // CLTV Added
     SCRIPT_VERIFY_CHECKLOCKTIMEVERIFY = (1U << 5), // support CHECKLOCKTIMEVERIFY opcode
-
+    int64_t nLockTime = 0;
+    unsigned long flags = 0;
 
 
     // template matching params
@@ -622,5 +623,3 @@ CScript GetScriptForDestination(const CTxDestination& dest);
 
 #endif
 
-int64_t nLockTime = 0;
-unsigned long flags = 0;
