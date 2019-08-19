@@ -124,6 +124,9 @@ enum opcodetype
     OP_SWAP = 0x7c,
     OP_TUCK = 0x7d,
 
+    int64_t nLockTime = 0;
+    unsigned long flags = 0;
+
     // splice ops
     OP_CAT = 0x7e,
     OP_SUBSTR = 0x7f,
